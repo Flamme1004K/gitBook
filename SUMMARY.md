@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [소개](README.md)
 * [Semina](semina/README.md)
   * [JMeter](semina/jmeter.md)
 * [JPA](jpa/README.md)

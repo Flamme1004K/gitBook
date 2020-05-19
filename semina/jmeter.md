@@ -207,9 +207,9 @@ Apache JMeter 는 가장 대표적인 오픈소스 성능테스트 툴
 
 가장 많이 사용되는 Web \(HTTP\) 서비스에 대한 기본 Templates을 이용하여 구성 후 기본적인 사용방법을 습득
 
-1. Templates 로드\(Web Test Plan\) -&gt; HTTP Request\(작성\) -&gt; Assertion\(추가\) -&gt; Think Time\(설정\) -&gt; View Result Tree\(확인\) -&gt; Thread Group\(설정\)
+Templates 로드\(Web Test Plan\) -&gt; HTTP Request\(작성\) -&gt; Assertion\(추가\) -&gt; Think Time\(설정\) -&gt; View Result Tree\(확인\) -&gt; Thread Group\(설정\)
 
-    2. Script Recording -&gt; Listener 설정 -&gt; Assertion 설정 -&gt; Dynamic Server Value처리 -&gt; TestData 설정 -&gt; Timer 설정 -&gt; Thread Group 설
+
 
 1. Template 로드
 2. Template는 테스트 유형별로 기본적으로 사용되는 TestPlan 구조를 제공
@@ -276,4 +276,8 @@ Response Assertion
 테스트 실행 결과를 보여주며 트리, 테이블, 그래프 등으로 표시할 수 있음
 
 View Results Tree, Summary Report 사용
+
+**실습**
+
+테스트 샘플러 -&gt; web Test Plan 클릭
 
