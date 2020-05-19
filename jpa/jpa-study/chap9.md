@@ -229,6 +229,52 @@ member1과 member2의 도시는 모두 NewCity로 들어간다.
 
 #### Clone을 만드는 방법
 
+```java
+@Embeddable
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class AddressClone implements Cloneable{
+    @Column
+    private String city;
+    private String street;
+    private String zipcode;
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        AddressClone clone = (AddressClone) super.clone();
+        return clone;
+    }
+
+    public AddressClone(String city) {
+        this.city = city;
+    }
+
+}
+
+ public static void exClone(EntityManager em) throws CloneNotSupportedException {
+        MemberEmbeddClone member = new MemberEmbeddClone();
+        MemberEmbeddClone member1 = new MemberEmbeddClone();
+        member.setUsername("형준");
+        member1.setUsername("먕준");
+
+        AddressClone a = new AddressClone("old");
+        AddressClone b = (AddressClone) a.clone();
+        b.setCity("new");
+
+        member.setHomeAddress(a);
+        member1.setHomeAddress(b);
+
+
+
+        em.persist(member);
+        em.persist(member1);
+
+        em.flush();
+    }
+```
+
 #### 불변 객체
 
 불변 객체란? 한번 만들면 절대 변경할 수 없는 객체.
