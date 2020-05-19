@@ -209,10 +209,6 @@ Apache JMeter 는 가장 대표적인 오픈소스 성능테스트 툴
 
 Templates 로드\(Web Test Plan\) -&gt; HTTP Request\(작성\) -&gt; Assertion\(추가\) -&gt; Think Time\(설정\) -&gt; View Result Tree\(확인\) -&gt; Thread Group\(설정\)
 
-Script Recording -&gt; Listener 설정 -&gt; Assertionㅅ 설정 -&gt; Dynamic Server Value처리 -&gt; TestData 설정 -&gt; Timer 설정 -&gt; Thread Group 설
-
-
-
 
 
 1. Template 로드
