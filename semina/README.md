@@ -1,5 +1,5 @@
 ---
-description: Semina의 정리를 올려놓았습니다.
+description: 그동안 들었던 Semina를 정리해보자.
 ---
 
 # Semina
