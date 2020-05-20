@@ -22,7 +22,7 @@ KT DS 조정일 강사
 * 성능테스트 유형
 * 성능테스트 방식
 
-  **성능테스트란 ?**
+**성능테스트란 ?**
 
 특정한 부하 환경에서 응답과 안정성의 측면에서 시스템이 어떻게 동작하는지를 알아내기 위해 수행하는 시험.
 
@@ -119,12 +119,14 @@ ISTQB에서는 Perfomance Test의 유형을 다음 3가지로 정의
 
   KT는 Scalability Testing, Spike, Endurance Test를 중심적으로 한다고 한다.
 
-  **성능테스트 방식**
+**성능테스트 방식**
 
 * 인력 기반 층적 방식 : 테스트를 수행활 다수의 사람이 동시에 직접 서비스를 이용함에 따른 부하를 발생하는 방식
 * 자동화 도구 기반 측정 방식 : 사용자의 행위를 재현할 수 있는 스크립트를 동시에 발생함으로 성능테스트를 수행하는 방식
 
-  **성능테스트 절차**
+
+
+**성능테스트 절차**
 
 * 성능테스트 착수 단계
 * 성능테스트 계획 단계
@@ -174,25 +176,27 @@ Apache JMeter 는 가장 대표적인 오픈소스 성능테스트 툴
 
   `Jmeter를 주로 하는 회사는 없다. 거의 성능테스트는 성능테스트 회사에 맡긴다.`
 
-  **Jmeter 설치**
+\`\`
 
-  Mac \)
+**Jmeter 설치**
 
-  설치방법 : brew install jmeter \(컴퓨터에 JDK가 설치되어있어야 한다.\)
+Mac \)
 
-  실행 : open /usr/local/bin/jmeter
+설치방법 : brew install jmeter \(컴퓨터에 JDK가 설치되어있어야 한다.\)
 
-  새로운 터미널 창이 열리면서 jmeter GUI가 열림.
+실행 : open /usr/local/bin/jmeter
 
-  Window \)
+새로운 터미널 창이 열리면서 jmeter GUI가 열림.
 
-  설치방법 : Jmeter 사이트에서 5.3버전 설치
+Window \)
 
-  jmeter-plugins.org에서 라이브러리 설치하고 lib-ext 폴더에 넣어준다.
+설치방법 : Jmeter 사이트에서 5.3버전 설치
 
-  Custom SOAP Sampler, 3 Basic Graphs, 5 Additional Graphs 설치
+jmeter-plugins.org에서 라이브러리 설치하고 lib-ext 폴더에 넣어준다.
 
-  **WebTesting Site :  www.blazemeter.com**
+Custom SOAP Sampler, 3 Basic Graphs, 5 Additional Graphs 설치
+
+**WebTesting Site :  www.blazemeter.com**
 
 #### 성능테스트 실습
 
