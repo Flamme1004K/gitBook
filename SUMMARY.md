@@ -14,6 +14,7 @@
     * [Chap8](jpa/jpa-study/chap8.md)
     * [Chap9](jpa/jpa-study/chap9.md)
     * [Chap10 -1](jpa/jpa-study/chap10.md)
+    * [Chap10-2](jpa/jpa-study/chap10-2.md)
 * [Spring](spring/README.md)
   * [SpringMVC](spring/springmvc/README.md)
     * [SpringMVC-1](spring/springmvc/springmvc-1.md)
