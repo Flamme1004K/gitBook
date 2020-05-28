@@ -1237,28 +1237,30 @@ JPA 표준 명세에 정의된 페치 조인 문법은 다음과 같다.
 
 * 페치 조인 ::= \[ LEFT \[OUTER\] \| INNER \] JOIn FETCH 조인경로
 
-  **엔티티 페치 조인**
+  \*\*\*\*
 
-  ```java
-   select m from Member m join fetch m.team
-  ```
+**엔티티 페치 조인**
 
-  연관된 엔티티나 컬렉션을 함께 조회를 회원\(m\)과 팀\(m.team\)을 함께 조회한다.
+```java
+ select m from Member m join fetch m.team
+```
 
-  페치 조인은 별칭을 사용할 수 없다.
+연관된 엔티티나 컬렉션을 함께 조회를 회원\(m\)과 팀\(m.team\)을 함께 조회한다.
 
-  회원과 팀 객체가 객체 그래프를 유지하면서 조회 된다.
+페치 조인은 별칭을 사용할 수 없다.
 
-  ```java
-   String jpql = "select m from Member m join fetch m.team";
+회원과 팀 객체가 객체 그래프를 유지하면서 조회 된다.
 
-   List<Member> members = em.createQuery(jpql, Member.class).getResultList();
+```java
+ String jpql = "select m from Member m join fetch m.team";
 
-   for (Member member : members) {
-       //페치 조인으로 회원과 팀을 함께 조회해서 지연 로딩 발생 안 함
-       System.out.println("username = " + member.getUsername() + ", teamname = " + member.getTeam().name() );
-   }
-  ```
+ List<Member> members = em.createQuery(jpql, Member.class).getResultList();
+
+ for (Member member : members) {
+     //페치 조인으로 회원과 팀을 함께 조회해서 지연 로딩 발생 안 함
+     System.out.println("username = " + member.getUsername() + ", teamname = " + member.getTeam().name() );
+ }
+```
 
 회원을 조회할 때 페치 조인을 사용해서 팀도 함께 조회했으므로 연관된 팀 엔티티는 프로깃가 아닌 실제 엔티티다.
 
