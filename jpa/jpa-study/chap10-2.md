@@ -1394,37 +1394,39 @@ m.username, m.team, m.orders, t.name이 모두 경로 표현식을 사용한 예
 * 단일 값 연관 필드 : m.team
 * 컬렉션 값 연관 필드 : m.orders
 
-  **경로 표현식과 특징**
+  \*\*\*\*
 
-  JPQL에서 경로 표현식을 사용해서 경로 탐색을 하려면 다음 3가지 경로에 따라 어떤 특징이 있는지 이해해야 한다.
+**경로 표현식과 특징**
 
-  **상태 필드 경로**
+JPQL에서 경로 표현식을 사용해서 경로 탐색을 하려면 다음 3가지 경로에 따라 어떤 특징이 있는지 이해해야 한다.
 
-  경로 탐색의 끝이다. 더는 탐색할 수 없다.
+**상태 필드 경로**
 
-  * 다음 JPQL의 m.username, m.age는 상태 필드 경로 탐색이다.
-  * select m.username, m.age from Member m
+경로 탐색의 끝이다. 더는 탐색할 수 없다.
 
-  **단일 값 연관 경로**
+* 다음 JPQL의 m.username, m.age는 상태 필드 경로 탐색이다.
+* select m.username, m.age from Member m
 
-  묵시적으로 내부 조인이 일어난다.
+**단일 값 연관 경로**
 
-  단일 값 연관 경로는 계속 탐색할 수 있다.
+묵시적으로 내부 조인이 일어난다.
 
-  select o.member from Order o
+단일 값 연관 경로는 계속 탐색할 수 있다.
 
-  select m.\* from Orders o inner join Member m on o.member\_id = m.id
+select o.member from Order o
 
-  * 단일 값 연관 필드로 경로 탐색을 하면 SQL에서 내부 조인이 일어나는데 이것을 묵시적 조인이라 한다.
-  * 묵시적 조인은 모두 내부 조인이다.
-  * 명시적 조인 : JOIN을 직접 적어주는 것 ex\) SELECT m FROM Member m JOIN m.team t
-  * 묵시적 조인 : 경로 표현식에 의해 묵시적으로 조인이 일어나는 것, 내부 조인\(INNER JOIN\)만 할 수 있다. ex\) SELECT m.team FROM Member m
+select m.\* from Orders o inner join Member m on o.member\_id = m.id
 
-  \`\`\`java //JPQL select o.member.team
+* 단일 값 연관 필드로 경로 탐색을 하면 SQL에서 내부 조인이 일어나는데 이것을 묵시적 조인이라 한다.
+* 묵시적 조인은 모두 내부 조인이다.
+* 명시적 조인 : JOIN을 직접 적어주는 것 ex\) SELECT m FROM Member m JOIN m.team t
+* 묵시적 조인 : 경로 표현식에 의해 묵시적으로 조인이 일어나는 것, 내부 조인\(INNER JOIN\)만 할 수 있다. ex\) SELECT m.team FROM Member m
 
-  from Order o
-
-  where o.product.name = 'productA' and o.address.city = 'JINJU'
+```java
+//JPQL select o.member.team
+from Order o
+where o.product.name = 'productA' and o.address.city = 'JINJU'
+```
 
 ```text
 //실행된 SQL
@@ -1515,36 +1517,38 @@ JPQL도 SQL처럼 서브쿼리를 지원한다.
   * 서브쿼리의 결과 중 하나라도 같은 것이 있으면 참이다.
   * 참고로 IN은 서브쿼리가 아닌 곳에서도 사용한다.
 
-  **조건식**
+  \*\*\*\*
 
-  **타입 표현**
+**조건식**
 
-  문자
+**타입 표현**
+
+문자
 
 * 작은 따옴표 사이에 표현
 * 작은 따옴표를 표현하고 싶으면 작은 따옴펴 연속 두 개\(''\)사용
 * 'She''s'
 
-  숫자
+숫자
 
 * L, D, F
 
-  날짜
+날짜
 
 * DATA {d 'yyy-mm-dd'}
 * TIME {t 'hh-mm-ss'}
 * DATETIME{ts 'yyy-mm-dd hh:mm:ss.f'}
 
-  Boolean
+Boolean
 
 * TRUE, FALSE
 
-  Enum
+Enum
 
 * 패키지명을 포함한 전체 이름을 사용해야 한다.
 * jpabook.MemberType.Admin
 
-  엔티티 타입
+엔티티 타입
 
 * 엔티티의 타입을 표현한다. 주로 상속과 관련해서 사용한다.
 * TYPE\(m\) = Member
@@ -1560,22 +1564,22 @@ JPQL도 SQL처럼 서브쿼리를 지원한다.
 * 문법 : {컬렉션 값 연관경로 } Is \[NOT\] EMPTY
 * 설명 : 컬렉션에 값이 비었으면 참
 
-  ```java
-  //JPQL : 주문이 하나라도 있는 회원 조회
-  select m from Member m
-  where m.orders is not empty
+```java
+//JPQL : 주문이 하나라도 있는 회원 조회
+select m from Member m
+where m.orders is not empty
 
-  //실행된 SQL
-  select m.* from Member m
-  where 
-     exists {
-         select o.id
-         from Orders o
-         where m.id= o.member_id
-     }
-  ```
+//실행된 SQL
+select m.* from Member m
+where 
+   exists {
+       select o.id
+       from Orders o
+       where m.id= o.member_id
+   }
+```
 
-  **컬렉션의 멤버 식**
+**컬렉션의 멤버 식**
 
 * 문법 : {엔티티나 값} \[NOT\] MEMBER \[OF\] {컬렉션 값 연관 경로}
 * 설명 : 에티티나 값이 컬렉션에 포함되어 있으면 참
@@ -1585,88 +1589,98 @@ JPQL도 SQL처럼 서브쿼리를 지원한다.
   where :memberParam member of t.members
   ```
 
-  **스칼라 식**
+  \*\*\*\*
 
-  스칼라는 숫자, 문자, 날짜, case, 엔티티 타입 같은 가장 기본적인 타입들을 말한다.
+**스칼라 식**
+
+스칼라는 숫자, 문자, 날짜, case, 엔티티 타입 같은 가장 기본적인 타입들을 말한다.
 
 * 수학 식
 * 문자 함수
 * 수학 함수
 * 날짜 함수
 
-  **CASE 식**
+  \*\*\*\*
 
-  특정 조건에 따라 분기할 때 CASE 식을 사용한다.
+**CASE 식**
+
+특정 조건에 따라 분기할 때 CASE 식을 사용한다.
 
 * 기본 CASE
 * 심플 CASE
 * COALESCE
 * NULLIF
 
-  **다형성 쿼리**
+  \*\*\*\*
 
-  JPQL는 부모 엔티티를 조회하면 그 자식 엔티티도 함께 조회한다.
+**다형성 쿼리**
 
-  ```java
-  @Entity
-  @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-  @DiscrimiantorColumn(name = "DTYPE")
-  public abstract class Item {...}
+JPQL는 부모 엔티티를 조회하면 그 자식 엔티티도 함께 조회한다.
 
-  @Entity
-  @DiscriminatorValue("B")
-  public class Book extends Item { 
-     private String author;
-  }
+```java
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscrimiantorColumn(name = "DTYPE")
+public abstract class Item {...}
 
-  //Album, Movie 생략
+@Entity
+@DiscriminatorValue("B")
+public class Book extends Item { 
+   private String author;
+}
 
-  List resultList = em.createQuery("select i from Item i").getResultList();
-  ```
+//Album, Movie 생략
 
-  **TYPE**
+List resultList = em.createQuery("select i from Item i").getResultList();
+```
 
-  TYPE은 엔티티의 상속 구조에서 조회 대상을 특정 자식타입으로 한정할 떄 주로 사용한다.
+**TYPE**
 
-  **TREAT\(JPA2.1\)**
+TYPE은 엔티티의 상속 구조에서 조회 대상을 특정 자식타입으로 한정할 떄 주로 사용한다.
 
-  자바의 타입 캐스팅과 비슷하다.
+**TREAT\(JPA2.1\)**
 
-  상속구조에서 부모 타입을 특정 자식 타입으로 다룰 때 사용한다.
+자바의 타입 캐스팅과 비슷하다.
 
-  **사용자 정의 함수 호출\(JPA2.1\)**
+상속구조에서 부모 타입을 특정 자식 타입으로 다룰 때 사용한다.
 
-  JPA 2.1부터 사용자 정의 함수를 지원한다.
+**사용자 정의 함수 호출\(JPA2.1\)**
+
+JPA 2.1부터 사용자 정의 함수를 지원한다.
 
 * 문법 : function\_invocation:: = FUNCTION\(function\_name {, function\_arg\)\*\)
 * 예 : select function\('group\_concat', i.name\) from Item i
 
-  ```java
-  public class MyH2Dialect extends H2Dialect { 
-     public MyH2Dialect() {
-         registerFunction("group_concat", new StandardSQLFunction("group_concat", StandardBasicTypes.STRING))
-     }
-  }
-  ```
+```java
+public class MyH2Dialect extends H2Dialect { 
+   public MyH2Dialect() {
+       registerFunction("group_concat", new StandardSQLFunction("group_concat", StandardBasicTypes.STRING))
+   }
+}
+```
 
-  hibernate.dialect에 해당 방언을 등록해야 한다.
+hibernate.dialect에 해당 방언을 등록해야 한다.
 
-  select group concat\(i.name\) from Item i
+select group concat\(i.name\) from Item i
 
-  **기타 정리**
+\*\*\*\*
+
+**기타 정리**
 
 * enum을 = 비교 연산만 지원한다.
 * 임베디드 타입은 비교를 지원하지 않는다.
 
-  **EMPTY STRING**
+  \*\*\*\*
 
-  **NULL 정의**
+**EMPTY STRING**
 
-  **엔티티 직접 사용**
+**NULL 정의**
 
-  **외래 키 값**
+**엔티티 직접 사용**
 
-  **Named 쿼리 : 정적 쿼리**
+**외래 키 값**
+
+**Named 쿼리 : 정적 쿼리**
 
 **호출\(JPA2.1\)**
 
@@ -1675,30 +1689,34 @@ JPA 2.1부터 사용자 정의 함수를 지원한다.
 * 문법 : function\_invocation:: = FUNCTION\(function\_name {, function\_arg\)\*\)
 * 예 : select function\('group\_concat', i.name\) from Item i
 
-  ```java
-  public class MyH2Dialect extends H2Dialect { 
-     public MyH2Dialect() {
-         registerFunction("group_concat", new StandardSQLFunction("group_concat", StandardBasicTypes.STRING))
-     }
-  }
-  ```
+```java
+public class MyH2Dialect extends H2Dialect { 
+   public MyH2Dialect() {
+       registerFunction("group_concat", new StandardSQLFunction("group_concat", StandardBasicTypes.STRING))
+   }
+}
+```
 
-  hibernate.dialect에 해당 방언을 등록해야 한다.
+hibernate.dialect에 해당 방언을 등록해야 한다.
 
-  select group concat\(i.name\) from Item i
+select group concat\(i.name\) from Item i
 
-  **기타 정리**
+\*\*\*\*
+
+**기타 정리**
 
 * enum을 = 비교 연산만 지원한다.
 * 임베디드 타입은 비교를 지원하지 않는다.
 
-  **EMPTY STRING**
+  \*\*\*\*
 
-  **NULL 정의**
+**EMPTY STRING**
 
-  **엔티티 직접 사용**
+**NULL 정의**
 
-  **외래 키 값**
+**엔티티 직접 사용**
 
-  **Named 쿼리 : 정적 쿼리**
+**외래 키 값**
+
+**Named 쿼리 : 정적 쿼리**
 
