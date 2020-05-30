@@ -23,7 +23,7 @@ SELECT m FROM Member AS m WHERE m.username = 'Hello'
   * Member, username은 대소문자를 구분한다.
   * SELECT, FROM, AS 같은 JPQL 키워드는 대소문자를 구분하지 않는다.
 
-  엔티티 이름
+엔티티 이름
 
 * JPQL에 사용한 Member는 클래스 명이 아니라 엔티티 명이다.
 
@@ -66,7 +66,9 @@ SELECT m FROM Member AS m WHERE m.username = 'Hello'
   }
   ```
 
-  **결과 조회**
+  \*\*\*\*
+
+**결과 조회**
 
 실제 쿼리를 실행해서 데이터베이스를 조회한다.
 
