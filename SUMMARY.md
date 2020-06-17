@@ -5,6 +5,7 @@
   * [JMeter](semina/jmeter.md)
 * [JPA](jpa/README.md)
   * [JPA Study](jpa/jpa-study/README.md)
+    * [Chap14](jpa/jpa-study/chap14.md)
     * [Chap1](jpa/jpa-study/chap1.md)
     * [Chap3](jpa/jpa-study/chap3-1.md)
     * [Chap4](jpa/jpa-study/chap4.md)
