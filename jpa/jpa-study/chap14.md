@@ -4,9 +4,11 @@ description: 이것은 김영한님의 JPA책을 정리한 글입니다.
 
 # Chap14
 
+## 
+
 ## JPA 14장 - 컬렉션과 부가 기능
 
-14장에서 다루는 주제는 크게 컬렉션, 컨버터, 리스터, 엔티티 그래프 입니다.
+14장에서 다루는 주제는 크게 컬렉션, 컨버터, 리스너, 엔티티 그래프 입니다.
 
 ### 컬렉션
 
@@ -23,31 +25,31 @@ JPA는 자바에서 기본으로 제공하는 Collection, List, Set, Map 컬렉�
 
   하이버네이트는 엔티티를 영속 상태로 만들 때 컬렉션 필드를 하이버네이트에서 준비한 컬렉션으로 감싸 사용한다.
 
-  \`\`\`java @OneToMany @JoinColumn private Collection members = new ArrayList\(\);
-
---&gt;
-
-Team team = new Team\(\);
-
-System.out.println\("before persist =" + team.getMembers\(\).getClass\(\)\); em.persist\(parent\); Systme.out.println\("after persist = " + team.getMember\(\).getClass\);
-
---&gt;
-
-before persist = class java.util.ArrayList after persist = class org.hibernate.collection.internal.PersistnetBag
-
 ```text
-- ArrayList 타입이었던 컬렉션이 엔티티 영속 상태로 만든 직후 하이버네이트가 제공하는 PersistentBag 타입으로 변경되었다.
 
-즉 하이버네이트는 컬렉션을 효율적으로 관리하기 위해 엔티티를 영속 상태로 만들 때 원본 컬렉션을 깜싸고 있는 내장 컬렉션을 생성해서 이 내장 컬렉션을 사용하도록 참조를 변경한다.
+java @OneToMany @JoinColumn private Collection members = new ArrayList();
+-->
+Team team = new Team();
+System.out.println("before persist =" + team.getMembers().getClass()); em.persist(parent); Systme.out.println("after persist = " + team.getMember().getClass);
+-->
+before persist = class java.util.ArrayList after persist = class org.hibernate.collection.internal.PersistnetBag
+```
+
+* ArrayList 타입이었던 컬렉션이 엔티티 영속 상태로 만든 직후 하이버네이트가 제공하는 PersistenetBag 타입으로 변경되었다.
+
+즉 하이버네이트는 컬렉션의 효율적으로 관리하기 위해 엔티티를 영속 상태로 만들 때 원본 컬렉션을 감싸고 있는 내장 컬렉션을 생성해서 이 내장 컬렉션을 사용하도록 참조를 변경한다.
 
 하이버네이트가 제공하는 내장 컬렉션은 원본 컬렉션을 감싸고 있어서 래퍼 컬렉션으로도 부른다.
-``Collection, List, Set, Map 모두 래퍼 컬렉션이 다르다.``
+
+`Collection, List, Set, Map 모두 래퍼 컬렉션이 다르다.`
 
 결과적으로 이런 특징 때문에 컬렉션을 사용할 때 초기화해서 사용하는 것을 권장한다.
 
-```java
+```text
 Collection<Member> members = new ArrayList<Member>();
 ```
+
+\*\*\*\*
 
 **이제 Collection, List, Set, Map에 대한 래퍼 컬렉션에 대해서 알아보자.**
 
@@ -79,7 +81,7 @@ public class Parent {
 ```java
     List<Comment> comments = new ArrayList<Comment>();
 
-    //단순히 추가만 한다. 결과는 항상 trueek.
+    //단순히 추가만 한다. 결과는 항상 true다.
     boolean result = commtents.add(data)
 
     comments.contaions(comment);
@@ -226,7 +228,7 @@ em.persist(comment2);
 
 ### @Converter
 
-컨버터를 사용하면 엔티티의 데이터를 변환햇 ㅓ데이터베이스에 저장한다.
+컨버터를 사용하면 엔티티의 데이터를 변환해서 데이터베이스에 저장한다.
 
 데이터베이스에 0 또는 1인 숫자를 N이나 Y로 변경해서 저장할때 컨버터를이용하면 된다.
 
