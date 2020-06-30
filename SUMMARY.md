@@ -19,6 +19,8 @@
     * [Chap12](jpa/jpa-study/chap12.md)
     * [Chap14](jpa/jpa-study/chap14.md)
 * [Spring](spring/README.md)
+  * [SpringEtc](spring/springetc/README.md)
+    * [JacksonAnnotation](spring/springetc/jacksonannotation.md)
   * [SpringMVC](spring/springmvc/README.md)
     * [SpringMVC-1](spring/springmvc/springmvc-1.md)
     * [SpringMVC - validator와 Errors](spring/springmvc/springmvc-validator-errors.md)
