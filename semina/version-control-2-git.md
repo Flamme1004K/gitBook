@@ -1,5 +1,5 @@
 ---
-description: 2020-07-02 형상관리툴 세미나 내용입니다.
+description: 2020-07-02에 진행한 형상관리툴 세미나 내용입니다.
 ---
 
 # Version control - 2 \(GIT\)
