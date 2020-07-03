@@ -29,7 +29,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>  ▶ 특정 Controller에서 뷰의 이름을 "download"라고 지정 시 위의 sp.mvc.file.download.ExcelDown 클래스가 처리
+</table>
+
+  ▶ 특정 Controller에서 뷰의 이름을 "download"라고 지정 시 위의 sp.mvc.file.download.ExcelDown 클래스가 처리
 
 **■ XmlViewResolver**
 

@@ -2,7 +2,7 @@
 
 * [소개](README.md)
 * [Semina](semina/README.md)
-  * [Git](semina/git.md)
+  * [Version control](semina/git.md)
   * [JMeter](semina/jmeter.md)
 * [JPA](jpa/README.md)
   * [JPA Study](jpa/jpa-study/README.md)
