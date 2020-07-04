@@ -1,10 +1,12 @@
 ---
-description: 그동안 들었던 Semina를 정리해보자.
+description: Semina에 대한 페이지입니다.
 ---
 
 # Semina
 
-\[JMeterSemina / 2020-05-18 ~ 2020-05-19 / TTA\]\([https://app.gitbook.com/@flamme1004/s/flamme-dev/~/drafts/-M7evmVeu-zIYCHQtEvG/semina/jmeter](https://app.gitbook.com/@flamme1004/s/flamme-dev/~/drafts/-M7evmVeu-zIYCHQtEvG/semina/jmeter)\)
+지금까지 들었던 세미나와 제가 회사에서 진행한 세미나를  모아둔 페이지 입니다.
+
+
 
 
 
