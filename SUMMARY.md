@@ -6,6 +6,8 @@
   * [Version control - 2 \(GIT\)](semina/version-control-2-git.md)
   * [PostMan](semina/postman.md)
   * [JMeter](semina/jmeter.md)
+* [JAVA](java/README.md)
+  * [Generic](java/generic.md)
 * [JPA](jpa/README.md)
   * [JPA Study](jpa/jpa-study/README.md)
     * [Chap1](jpa/jpa-study/chap1.md)
