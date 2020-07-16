@@ -27,6 +27,8 @@
     * [Chap14](jpa/jpa-study/chap14.md)
 * [Spring](spring/README.md)
   * [SpringEtc](spring/springetc/README.md)
+    * [Mybatis](spring/springetc/mybatis.md)
+    * [@Transactional](spring/springetc/transactional.md)
     * [JacksonAnnotation](spring/springetc/jacksonannotation.md)
   * [SpringMVC](spring/springmvc/README.md)
     * [SpringMVC-1](spring/springmvc/springmvc-1.md)
