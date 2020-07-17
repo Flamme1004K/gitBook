@@ -16,7 +16,7 @@ select * from PRODUCT, CATEGORY where PRD_CAT_ID=CAT_ID and PRD_ID = #value#
 </statement>
 ```
 
-category.id를 넣었는데 null값이 들어가는 이유는 뭘까?
+category.id를 넣었는데 NullPointerException이 일어나는 이유는 뭘까?
 
 ```text
 public class Product{
