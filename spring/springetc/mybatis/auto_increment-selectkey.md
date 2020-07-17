@@ -1,10 +1,8 @@
 ---
-description: Mybatis에 대해서 궁금한 점
+description: 2020/07/16
 ---
 
-# Mybatis
-
- 2020/07/16 
+# auto\_Increment, selectKey
 
 Mybatis에서 auto\_Increment selectKey를 사용했을 때 동일한 데이터가 들어가서 충돌이 나지 않을까?
 
