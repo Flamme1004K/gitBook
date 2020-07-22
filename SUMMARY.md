@@ -28,6 +28,7 @@
 * [Spring](spring/README.md)
   * [SpringEtc](spring/springetc/README.md)
     * [Mybatis](spring/springetc/mybatis/README.md)
+      * [IBatis - sql에 Map](spring/springetc/mybatis/ibatis-sql-map.md)
       * [1:1 Mapping시 Null](spring/springetc/mybatis/1-1-mapping-null.md)
       * [auto\_Increment, selectKey](spring/springetc/mybatis/auto_increment-selectkey.md)
     * [@Transactional](spring/springetc/transactional.md)
