@@ -7,6 +7,7 @@
   * [PostMan](semina/postman.md)
   * [JMeter](semina/jmeter.md)
 * [JAVA](java/README.md)
+  * [Static](java/static.md)
   * [Object](java/object/README.md)
     * [1. Single Responsibility Principle](java/object/1.-single-responsibility-principle.md)
   * [Generic](java/generic.md)
