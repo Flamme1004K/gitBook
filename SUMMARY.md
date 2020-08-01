@@ -36,6 +36,7 @@
     * [@Transactional](spring/springetc/transactional.md)
     * [JacksonAnnotation](spring/springetc/jacksonannotation.md)
   * [SpringMVC](spring/springmvc/README.md)
+    * [Service와 ServiceImpl은 꼭 있어야할까?](spring/springmvc/service-serviceimpl.md)
     * [SpringMVC-1](spring/springmvc/springmvc-1.md)
     * [SpringMVC - validator와 Errors](spring/springmvc/springmvc-validator-errors.md)
     * [SpringMVC - DispatcherServlet의 URL](spring/springmvc/springmvc-dispatcherservlet-url.md)
