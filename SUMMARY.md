@@ -30,6 +30,8 @@
     * [Chap14](jpa/jpa-study/chap14.md)
 * [Spring](spring/README.md)
   * [SpringEtc](spring/springetc/README.md)
+    * [@Atowired NullPointer](spring/springetc/atowired-nullpointer.md)
+    * [CircleReference](spring/springetc/circlereference.md)
     * [Mybatis](spring/springetc/mybatis/README.md)
       * [IBatis - sql에 Map](spring/springetc/mybatis/ibatis-sql-map.md)
       * [1:1 Mapping시 Null](spring/springetc/mybatis/1-1-mapping-null.md)
