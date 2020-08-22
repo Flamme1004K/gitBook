@@ -26,5 +26,7 @@ AJP는 웹서버\(Apache\) 뒤에 있는 어플리케이션 서버로부터 웹�
   
 출처: [https://noobnim.tistory.com/26](https://noobnim.tistory.com/26) \[생각만 하지 말고 기록하자\]
 
+[https://www.lesstif.com/linux-infra-book/%EC%95%84%ED%8C%8C%EC%B9%98-%EC%9B%B9-%EC%84%9C%EB%B2%84%EC%99%80-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0-20776817.html](https://www.lesstif.com/linux-infra-book/%EC%95%84%ED%8C%8C%EC%B9%98-%EC%9B%B9-%EC%84%9C%EB%B2%84%EC%99%80-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0-20776817.html)
+
 
 
