@@ -30,6 +30,7 @@
     * [Chap14](jpa/jpa-study/chap14.md)
 * [Spring](spring/README.md)
   * [SpringEtc](spring/springetc/README.md)
+    * [Transactional](spring/springetc/transactional-1.md)
     * [@Atowired NullPointer](spring/springetc/atowired-nullpointer.md)
     * [CircleReference](spring/springetc/circlereference.md)
     * [Mybatis](spring/springetc/mybatis/README.md)
