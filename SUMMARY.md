@@ -7,6 +7,7 @@
   * [PostMan](semina/postman.md)
   * [JMeter](semina/jmeter.md)
 * [JAVA](java/README.md)
+  * [Java8](java/java8.md)
   * [함수지향적](java/undefined.md)
   * [Interface, Implements](java/interface-implements.md)
   * [Static](java/static.md)
