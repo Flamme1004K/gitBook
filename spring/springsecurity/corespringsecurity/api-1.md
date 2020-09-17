@@ -10,7 +10,7 @@
 
 더 안전하고 보완된 기능을 갖추려면 보안 기능을 추가해야한다.
 
-![](../../../.gitbook/assets/image%20%285%29.png)
+![](../../../.gitbook/assets/image%20%286%29.png)
 
 #### SecurityConfig
 
@@ -59,5 +59,5 @@ WebSecurityConfigurerAdapter가 생성한다. 세부정인 보안 기능을 설�
 5.  anyRequest, authenticated --&gt; and --&gt; formLogin을 하여 로그인이 된다.
 6.  바로 로그인 과정이 여기서 진행되는 것이고 나중에 configure을 상속받아 인증인가를 구현하면 된다.
 
-![](../../../.gitbook/assets/image%20%284%29.png)
+![](../../../.gitbook/assets/image%20%285%29.png)
 
