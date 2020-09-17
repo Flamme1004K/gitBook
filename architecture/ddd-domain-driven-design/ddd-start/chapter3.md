@@ -1,3 +1,7 @@
+---
+description: 이 글은 최범균 저자님의 DDD-START의 정리입니다.
+---
+
 # Chapter3 애그리거트
 
 ## 항목
