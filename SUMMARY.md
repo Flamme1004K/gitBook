@@ -4,6 +4,7 @@
 * [Architecture](architecture/README.md)
   * [DDD\(Domain-driven design\)](architecture/ddd-domain-driven-design/README.md)
     * [DDD-START](architecture/ddd-domain-driven-design/ddd-start/README.md)
+      * [Chapter3 애그리거트](architecture/ddd-domain-driven-design/ddd-start/chapter3.md)
       * [Chapter2 아키텍쳐 개요](architecture/ddd-domain-driven-design/ddd-start/chapter2.md)
       * [Chapter1 도메인 모델의 시작](architecture/ddd-domain-driven-design/ddd-start/chapter1.md)
 * [Semina](semina/README.md)
