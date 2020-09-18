@@ -76,6 +76,8 @@
     * [tar 압축 시 어떻게 심볼릭 링크도 같이 압축할까?](linux/linux-202003/tar.md)
     * [tar 명령어](linux/linux-202003/tar-1.md)
     * [ln -s 심볼릭 링크](linux/linux-202003/ln-s.md)
+* [DATABASE](database/README.md)
+  * [데이터베이스 식별자 선택 전략](database/undefined.md)
 * [Project](project.md)
 * [Tomcat](tomcat/README.md)
   * [Virtual Host\(Port\)](tomcat/virtual-host-port.md)
