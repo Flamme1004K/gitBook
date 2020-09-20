@@ -39,6 +39,7 @@
     * [Chap14](jpa/jpa-study/chap14.md)
 * [Spring](spring/README.md)
   * [SpringSecurity](spring/springsecurity/README.md)
+    * [SpringSecurity를  왜 써야할까?](spring/springsecurity/springsecurity.md)
     * [CoreSpringSecurity](spring/springsecurity/corespringsecurity/README.md)
       * [UsernamePasswordAuthenticationFilter](spring/springsecurity/corespringsecurity/usernamepasswordauthenticationfilter.md)
       * [Form인증](spring/springsecurity/corespringsecurity/form.md)
