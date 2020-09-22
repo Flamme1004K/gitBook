@@ -15,6 +15,7 @@
 * [JAVA](java/README.md)
   * [JVM](java/jvm.md)
   * [Java8](java/java8/README.md)
+    * [lambda - Collection](java/java8/lambda-collection.md)
     * [Optional](java/java8/optional.md)
   * [함수지향적](java/undefined.md)
   * [Interface, Implements](java/interface-implements.md)
