@@ -38,6 +38,7 @@
     * [Chap10-3](jpa/jpa-study/chap10-3.md)
     * [Chap12](jpa/jpa-study/chap12.md)
     * [Chap14](jpa/jpa-study/chap14.md)
+* [Vert.x](vert.x.md)
 * [Spring](spring/README.md)
   * [Filter와 Interceptor의 차이](spring/filter-interceptor.md)
   * [SpringSecurity](spring/springsecurity/README.md)
