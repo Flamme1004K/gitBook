@@ -1,6 +1,6 @@
 # JVM
 
-![&#xCD9C;&#xCC98;: https://asfirstalways.tistory.com/158](../.gitbook/assets/image%20%283%29.png)
+![&#xCD9C;&#xCC98;: https://asfirstalways.tistory.com/158](../../.gitbook/assets/image%20%283%29.png)
 
 JVM이란? 스택기반 머신으로 
 
