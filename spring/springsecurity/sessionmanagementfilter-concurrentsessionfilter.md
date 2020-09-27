@@ -7,8 +7,6 @@
 3. 세션 고정 보호 - 인증 할 때마다 세션쿠키를 새로 발급하여 공격자의 쿠기 조작을 방지
 4. 세션 생성 정책 - Always, If\_Required, Naver, Stateless
 
-
-
 ## ConcurrentSessionFilter
 
 1. 매 요청 마다 현재 사용자의 세션 만료 여부 체크
