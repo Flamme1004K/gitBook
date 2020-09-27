@@ -17,7 +17,7 @@
 
 sessionManagement 세션과 같이 연계해서 사용한다.\(동시적 세션 제어\)
 
-![](../../.gitbook/assets/2020-09-27-9.49.36.png)
+![](../../../.gitbook/assets/2020-09-27-9.49.36.png)
 
-![](../../.gitbook/assets/2020-09-27-9.54.08.png)
+![](../../../.gitbook/assets/2020-09-27-9.54.08.png)
 
