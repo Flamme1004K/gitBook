@@ -63,37 +63,39 @@ description: 이 글은 김영한님의 jpa책을 보고 공부한 흔적입니�
 
   객체 관계 매핑
 
-  \`\`\`java @Entity public class Member { @Id @Column\(name= "MEMBER\_ID"\) private String id;
-
-  private String username;
-
-  //연관관계 매핑 @ManyToOne // 다대일 관계라는 매핑정보 @JoinColumn\(name="TEAM\_ID"\) // 조인 컬럼은 외래 키를 매핑할 떄 사용한다. private Team team;
-
-  public void setTeam\(Team team\) { this.team = team; } }
-
-@Entity public class Team { @Id @Column\(name = "TEAM\_ID"\) private String id;
-
 ```text
-private String name;
-```
+@Entity 
+public class Member {
+    @Id 
+    @Column(name= "MEMBER_ID") 
+    private String id;
+    private String username;
+    
+    //연관관계 매핑 
+    @ManyToOne // 다대일 관계라는 매핑정보 
+    @JoinColumn(name="TEAM_ID") // 조인 컬럼은 외래 키를 매핑할 떄 사용한다. 
+    private Team team;
 
+public void setTeam(Team team) { this.team = team; } 
 }
 
-```text
+@Entity 
+public class Team { @Id @Column(name = "TEAM_ID") private String id;
+    private String name;
+}
+```
+
 * 객체 연관관계 : 회원 객체의 Member.team 필드 사용
-* 테이블 연관관계 : 회원 테이브르이 MEMBER.TEAM_ID 외래 키 컬럼을 사용
+* 테이블 연관관계 : 회원 테이브르이 MEMBER.TEAM\_ID 외래 키 컬럼을 사용
 
-Member.team과 MEMBER.TEAM_ID를 매핑하는 것이 연관관계 매핑이다.
+Member.team과 MEMBER.TEAM\_ID를 매핑하는 것이 연관관계 매핑이다.
 
-### @JoinColumn
+#### @JoinColumn
 
 * name : 매핑할 외래 키 이름
 * referencedColumnName : 외래 키가 참조하는 대상 테이블의 컬럼명
-* foreignKey(DDL) : 외래 키 제약조건을 직접 지정할 수 있다.
+* foreignKey\(DDL\) : 외래 키 제약조건을 직접 지정할 수 있다.
 * unique, nullable, isertable, updateble, columnDefinition, table
-
-```@JoinColumn을 생략하면 외래 키를 찾을 떄 기본 전략을 사용한다. 참조하는 테이블의 기본 키 컬럼명 사용
-```
 
 #### @ManyToOne
 
