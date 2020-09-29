@@ -3,6 +3,7 @@
 * [소개](README.md)
 * [Architecture](architecture/README.md)
   * [DDD\(Domain-driven design\)](architecture/ddd-domain-driven-design/README.md)
+    * [DDD-Lite정리](architecture/ddd-domain-driven-design/ddd-lite.md)
     * [DDD-START](architecture/ddd-domain-driven-design/ddd-start/README.md)
       * [Chapter3 애그리거트](architecture/ddd-domain-driven-design/ddd-start/chapter3.md)
       * [Chapter2 아키텍쳐 개요](architecture/ddd-domain-driven-design/ddd-start/chapter2.md)
