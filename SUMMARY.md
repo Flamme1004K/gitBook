@@ -105,7 +105,6 @@
   * [그림으로 배우는 HTTP NetWork Basic](network/http-network-basic.md)
   * [SSO\(Single Sign On\)](network/sso-single-sign-on.md)
 * [Common](common/README.md)
-  * [Untitled](common/untitled.md)
   * [코드리뷰](common/undefined/README.md)
     * [2020-09-10](common/undefined/2020-09-10.md)
     * [2020-09-03](common/undefined/2020-09-03.md)
