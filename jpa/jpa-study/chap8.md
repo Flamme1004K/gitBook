@@ -14,6 +14,8 @@ description: 이 글은 김영한님의 jpa책을 보고 공부한 흔적입니�
 
  어떤 일을 대리인\(프록시\)에게 위임하여 처리하는 패턴이다. 원격 객체에 접근하기 위해 사용하거나, 이미지 로딩과 같이 객체 생성 작업이 오래걸리는 경우에 사용된다.
 
+{% embed url="https://juyoung-1008.tistory.com/10" %}
+
 {% embed url="https://jdm.kr/blog/235" %}
 
 {% embed url="https://kihoonkim.github.io/2017/01/27/JPA\(Java%20ORM\)/4.%20JPA-%ED%94%84%EB%A1%9D%EC%8B%9C%20%EC%99%80%20%EC%A7%80%EC%97%B0%EB%A1%9C%EB%94%A9/" %}
