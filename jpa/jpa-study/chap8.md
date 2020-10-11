@@ -61,7 +61,9 @@ JPA는 이 문제를 해결하기 위해서 지연 로딩을 사용한다.
 Member member = em.getReference(Member.class, "member1");
 ```
 
-`getReference메소드를 사용하면 엔티티를 실제 사용하는 시점까지 데이터베이스 조회를 미룰 수가 있다.`
+`getReference메소드를 사용하면 엔티티를 실제 사용하는 시점까지 데이터베이스 조회를 미룰 수가 있다. 이 메소드를 호출할 때 JPA는 데이터베이스를 조회하지 않고 실제 엔티티 객체도 생성하지 않는다. 대신에 데이터베이스 접근을 위임한 프록시 객체를 반환한다.`
+
+![](../../.gitbook/assets/2020-10-11-2.37.55.png)
 
 **프록시 객체의 초기화**
 
@@ -70,15 +72,11 @@ Member member = em.getReference(Member.class, "id");
 member.getName();
 ```
 
-member.getName\(\)처럼 실제 사용할 때 데이터베이스를 조회해서 실제 엔티티 객체를 생성하는게 바로 객체의 초기화이다.
+프록시 객체는 member.getName\(\)처럼 실제 사용할 때 데이터베이스를 조회해서 실제 엔티티 객체를 생성하는게 바로 프록시 객체의 초기화라고 말합니다..
 
-```java
-Member member = em.getReference(Member.class, "id1");
-transaction.commit();
-em.close();
- // <-- 준영속 상태와 초기화
-member.getName();  //<-- 예외 발생
-```
+![](../../.gitbook/assets/2020-10-11-2.44.35.png)
+
+![](../../.gitbook/assets/2020-10-11-2.47.34%20%281%29.png)
 
 **프록시의 특징**
 
@@ -86,7 +84,7 @@ member.getName();  //<-- 예외 발생
 2. 프록시 객체는 처음 사용할 때 한 번만 초기화된다.
 3. 프록시 객체를 초기화한다고 프록시 객체가 실제 엔티티로 바뀌는 것은 아니다. 프록시 객체가 초기화되면 프록시 객체를 통해서 실제 엔티티에 접근할 수 있다.
 4. 프록시 객체는 원본 엔티티를 상속받은 객체이므로 타입 체크 시에 주의해서 사용해야 한다.
-5. 영속성 컨텍스트에 찾는 엔티티가 이미 있으면 데이터베이스를 조회할 필요가 없으면 em.getReference\(\)를 호출해도 프록시가 아닌 실제 엔티티를 반환한다.
+5. 영속성 컨텍스트에 찾는 엔티티가 이미 있으면 데이터베이스를 조회할 필요가 없으므em.getReference\(\)를 호출해도 프록시가 아닌 실제 엔티티를 반환한다.
 6. 초기화는 영속성 컨텍스트의 도움을 받아야 가능하다.
 
 #### 프록시와 식별자
@@ -110,7 +108,8 @@ member.setTeam(team);
 #### 프록시 확인
 
 ```java
- boolean isLoad = em.getEntityManagerFactory().getPersistenceUnitUtil().isLoaded(entity);
+ boolean isLoad = em.getEntityManagerFactory()
+                    .getPersistenceUnitUtil().isLoaded(entity);
 // boolean isLoad = emf.getPersistenceUnitUtil().isLoaded(entity);
 System.out.printl("isLoad = " + isLoad);
 ```
