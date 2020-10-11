@@ -164,18 +164,18 @@ fetch 속성의 기본 설정값은 다음과 같다.
 * @ManyToOne, @OneToOne : 즉시 로딩\(FetchType.EAGER\)
 * @OneToMany, @ManyToMany : 지연 로딩\(FetcheType.LAZY\)
 
-  즉시 로딩과 지연 로딩을 사용하여 구현할 때는 모든 연관관계에 지연 로딩을 사용하는 것이고, 개발에서 어느정도 완성이 되었을 때 필요 한 곳에만 즉시 로딩을 사용하도록 최적화하는 것이다.
+ **즉시 로딩과 지연 로딩을 사용하여 구현할 때는 모든 연관관계에 지연 로딩을 사용하는 것이고, 개발에서 어느정도 완성이 되었을 때 필요 한 곳에만 즉시 로딩을 사용하도록 최적화하는 것이다.**
 
-  **FetchType.EAGER 사용 시 주의점**
+**FetchType.EAGER 사용 시 주의점**
 
-  * 컬렉션을 하나 이상 즉시 로딩하는 것은 권장하지 않는다.
-  * 컬렉션 즉시 로딩은 항상 외부 조인을 사용한다.
-  * @ManyToOne, @OneToOne
-    * \(optional = false\) : 내부 조인
-    * \(optional = true\) : 외부 조인
-  * @OneToMany, @ManyToMany
-    * \(optional = false\) : 외부 조인
-    * \(optional = true\) : 외부 조인
+* 컬렉션을 하나 이상 즉시 로딩하는 것은 권장하지 않는다.
+* 컬렉션 즉시 로딩은 항상 외부 조인을 사용한다.
+* @ManyToOne, @OneToOne
+  * \(optional = false\) : 내부 조인
+  * \(optional = true\) : 외부 조인
+* @OneToMany, @ManyToMany
+  * \(optional = false\) : 외부 조인
+  * \(optional = true\) : 외부 조인
 
 ### 영속성 전이: CASCADE
 
@@ -258,6 +258,4 @@ ISSUE\)
 영속성 컨텍스트에서 OneToOne 레이지 로딩을 할때는 연관관계의 주인이 아닐때는 LAZY로딩이 안된다.
 
 
-
-TestCase 만드는 
 
