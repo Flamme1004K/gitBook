@@ -145,9 +145,11 @@ System.out.printl("isLoad = " + isLoad);
 
   @JoinColumn\(nullable = false\) : NULL 허용하지 않음, 내부 조인 사용
 
-  **지연 로딩**
+  \*\*\*\*
 
-  : 연관된 엔티티를 실제 사용할 때 조회한다.
+**지연 로딩**
+
+: 연관된 엔티티를 실제 사용할 때 조회한다.
 
 * @ManyToOne\(fetch = FetchType.LAZY\)
 
@@ -178,6 +180,8 @@ fetch 속성의 기본 설정값은 다음과 같다.
 * @OneToMany, @ManyToMany
   * \(optional = false\) : 외부 조인
   * \(optional = true\) : 외부 조인
+
+ Optional ??  바로 널어블을 허용할 것인가 말 것인가이다.?
 
 ### 영속성 전이: CASCADE
 
@@ -258,6 +262,8 @@ CascadType.ALL + orphanRemoval = true를 동시에 사용하면 어떻게 될까
 ISSUE\)
 
 영속성 컨텍스트에서 OneToOne 레이지 로딩을 할때는 연관관계의 주인이 아닐때는 LAZY로딩이 안된다.
+
+[https://medium.com/@yongkyu.jang/jpa-%EB%8F%84%EC%9E%85-onetoone-%EA%B4%80%EA%B3%84%EC%97%90%EC%84%9C%EC%9D%98-lazyloading-%EC%9D%B4%EC%8A%88-1-6d19edf5f4d3](https://medium.com/@yongkyu.jang/jpa-%EB%8F%84%EC%9E%85-onetoone-%EA%B4%80%EA%B3%84%EC%97%90%EC%84%9C%EC%9D%98-lazyloading-%EC%9D%B4%EC%8A%88-1-6d19edf5f4d3)
 
 
 
