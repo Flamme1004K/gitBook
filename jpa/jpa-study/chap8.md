@@ -14,6 +14,8 @@ description: 이 글은 김영한님의 jpa책을 보고 공부한 흔적입니�
 
  어떤 일을 대리인\(프록시\)에게 위임하여 처리하는 패턴이다. 원격 객체에 접근하기 위해 사용하거나, 이미지 로딩과 같이 객체 생성 작업이 오래걸리는 경우에 사용된다.
 
+ proxy pattern과 비슷한 패턴은 바로 wrapper pattern이다. \(추가로 adapter pattern 도 알아보자\)
+
 {% embed url="https://juyoung-1008.tistory.com/10" %}
 
 {% embed url="https://jdm.kr/blog/235" %}
