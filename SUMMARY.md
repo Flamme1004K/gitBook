@@ -54,6 +54,7 @@
     * [antMatcher vs mvcMatcher](spring/springsecurity/antmatcher-vs-mvcmatcher.md)
     * [SpringSecurity를  왜 써야할까?](spring/springsecurity/springsecurity.md)
     * [CoreSpringSecurity](spring/springsecurity/corespringsecurity/README.md)
+      * [DelegatingProxyChain, FilterChainProxy](spring/springsecurity/corespringsecurity/delegatingproxychain-filterchainproxy.md)
       * [사이트 간 요청 위조 - CSRF, CsrfFilter](spring/springsecurity/corespringsecurity/csrf-csrffilter.md)
       * [예외 처리 및 요청 캐시 필터 : ExceptionTranslationFilter, RequestCacheAwareFilter](spring/springsecurity/corespringsecurity/exceptiontranslationfilter-requestcacheawarefilter.md)
       * [인가 API - 권한 설정 및 표현식](spring/springsecurity/corespringsecurity/api-2.md)
