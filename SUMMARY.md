@@ -57,6 +57,7 @@
     * [antMatcher vs mvcMatcher](spring/springsecurity/antmatcher-vs-mvcmatcher.md)
     * [SpringSecurity를  왜 써야할까?](spring/springsecurity/springsecurity.md)
     * [CoreSpringSecurity](spring/springsecurity/corespringsecurity/README.md)
+      * [SecurityContextPersistenceFilter](spring/springsecurity/corespringsecurity/securitycontextpersistencefilter.md)
       * [SecurityContextHolder, SecurityContext](spring/springsecurity/corespringsecurity/securitycontextholder-securitycontext.md)
       * [Authentication](spring/springsecurity/corespringsecurity/authentication.md)
       * [필터 초기화와 다중 보안 설정](spring/springsecurity/corespringsecurity/undefined-1.md)
