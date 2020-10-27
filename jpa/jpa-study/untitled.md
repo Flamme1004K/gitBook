@@ -44,7 +44,13 @@ JPA의 내부 동작 방식을 이해하지 못하면 문제가 발생했을 때
 
  **단 Jpa가 제공하는 RepositoryMethod들은 모두 @Transactional 처리가 되어있다.**
 
-## ? Transactional AOP?
+근데 왜?? 전에 LazyLoading이 일어났지?
+
+{% embed url="https://github.com/HomoEfficio/dev-tips/blob/master/Spring%20Data%20JPA%20-%20LazyInitialization%20%EC%97%90%EB%9F%AC%20-%20getOne\(\).md" %}
+
+{% embed url="https://javaworld.co.kr/85" %}
+
+{% embed url="https://stackoverflow.com/questions/36583185/spring-data-jpa-could-not-initialize-proxy-no-session-with-methods-marke" %}
 
 ![](../../.gitbook/assets/image%20%2815%29.png)
 
