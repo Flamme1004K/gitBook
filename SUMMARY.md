@@ -102,6 +102,7 @@
   * [SpringAOP](spring/springaop.md)
   * [SpringDI](spring/springdi.md)
 * [Linux](linux/README.md)
+  * [손에 잡히는 10분 SQL](linux/10-sql.md)
   * [리눅스 대소문자](linux/undefined.md)
   * [Linux\(202003\)](linux/linux-202003/README.md)
     * [rm](linux/linux-202003/rm.md)
