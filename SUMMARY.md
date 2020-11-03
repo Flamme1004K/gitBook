@@ -115,6 +115,8 @@
     * [tar 명령어](linux/linux-202003/tar-1.md)
     * [ln -s 심볼릭 링크](linux/linux-202003/ln-s.md)
 * [Database](database/README.md)
+  * [손에 잡히는 10분 SQL](database/10-sql/README.md)
+    * [Study2](database/10-sql/study2.md)
   * [MSSQL](database/mssql.md)
   * [MYSQL](database/mysql.md)
   * [데이터베이스 식별자 선택 전략](database/undefined.md)
