@@ -12,6 +12,8 @@
 
 ## 인덱스의 종류
 
+{% embed url="http://blog.naver.com/PostView.nhn?blogId=xxsaintxx&logNo=220604493277&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView" %}
+
 * 클러스터형 인덱스 : 순서대로 정렬되어 있는 인덱스
   * 테이블 당 한 개만 생성할 수 있다.
   * 행 데이터를 인덱스로 지정한 열에 맞춰서 자동 정렬화 한다.  
