@@ -75,6 +75,8 @@
 
 {% embed url="https://m.blog.naver.com/PostView.nhn?blogId=weekamp&logNo=221603471094&proxyReferer=https:%2F%2Fwww.google.com%2F" %}
 
+{% embed url="https://12bme.tistory.com/138" %}
+
 \*\*\*\*
 
 
