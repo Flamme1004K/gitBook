@@ -14,19 +14,7 @@
 
 {% embed url="http://blog.naver.com/PostView.nhn?blogId=xxsaintxx&logNo=220604493277&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView" %}
 
-* 클러스터형 인덱스 : 순서대로 정렬되어 있는 인덱스
-  * 테이블 당 한 개만 생성할 수 있다.
-  * 행 데이터를 인덱스로 지정한 열에 맞춰서 자동 정렬화 한다.  
-  * 테이블 생성시 하나의 열에 Primary Key를 지정하면 자동으로 클러스터형 인덱스가 생성
-* 넌클러스터형 인덱스
-
-  * 테이블당 여러 개를 생성할 수 있다.
-
-  기본 인덱스
-
-* 보조 인덱스
-* 클러스터링 인덱스
-* 넌클러스터링 인덱스
+{% embed url="https://mozi.tistory.com/199" %}
 
 ## **무조건 많이 설정하는 것이 좋냐?** 
 
@@ -76,8 +64,6 @@
 {% embed url="https://teraphonia.tistory.com/681" %}
 
 {% embed url="https://estenpark.tistory.com/384" %}
-
-{% embed url="https://mozi.tistory.com/199" %}
 
 \*\*\*\*
 
