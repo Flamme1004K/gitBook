@@ -75,6 +75,8 @@
 
 {% embed url="https://teraphonia.tistory.com/681" %}
 
+{% embed url="https://estenpark.tistory.com/384" %}
+
 \*\*\*\*
 
 
