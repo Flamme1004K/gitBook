@@ -116,6 +116,7 @@
     * [ln -s 심볼릭 링크](linux/linux-202003/ln-s.md)
 * [Database](database/README.md)
   * [손에 잡히는 10분 SQL](database/10-sql/README.md)
+    * [인덱스](database/10-sql/undefined.md)
     * [Study2](database/10-sql/study2.md)
   * [MSSQL](database/mssql.md)
   * [MYSQL](database/mysql.md)
