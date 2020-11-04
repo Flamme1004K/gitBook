@@ -61,6 +61,18 @@
 
 가 필요하다.
 
+### **참고 블로그**
+
+{% embed url="https://yurimkoo.github.io/db/2020/03/14/db-index.html" %}
+
+{% embed url="https://mongyang.tistory.com/75" %}
+
+{% embed url="https://lng1982.tistory.com/144" %}
+
+{% embed url="https://m.blog.naver.com/PostView.nhn?blogId=thwlstmxk&logNo=221062514161&proxyReferer=https:%2F%2Fwww.google.com%2F" %}
+
+{% embed url="https://m.blog.naver.com/PostView.nhn?blogId=weekamp&logNo=221603471094&proxyReferer=https:%2F%2Fwww.google.com%2F" %}
+
 \*\*\*\*
 
 
