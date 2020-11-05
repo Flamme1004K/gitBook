@@ -69,6 +69,8 @@
 
 {% embed url="https://jojoldu.tistory.com/243" %}
 
+{% embed url="https://isstory83.tistory.com/131" %}
+
 \*\*\*\*
 
 \*\*\*\*
