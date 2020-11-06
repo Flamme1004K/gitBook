@@ -453,3 +453,12 @@ SQL문은 한개 이상의 테이블에 대해 단일한 구문을 상요한다�
 
 보안은 SQL GRANT와 REVOKE 문으로 관리할 수 있는데, 대부분의 DBMS가 대화형 관리자 유틸리티를 제공한다.
 
+
+
+## [https://nesoy.github.io/articles/2018-02/Database-Partitioning](https://nesoy.github.io/articles/2018-02/Database-Partitioning
+)
+
+## [https://cheese10yun.github.io/mysql-explian/](https://cheese10yun.github.io/mysql-explian/)
+
+
+
