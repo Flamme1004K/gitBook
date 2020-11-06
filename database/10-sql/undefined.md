@@ -65,6 +65,14 @@
 
 {% embed url="https://estenpark.tistory.com/384" %}
 
+{% embed url="https://webmonkeyuk.wordpress.com/2010/09/22/what-makes-a-good-mysql-index-part-1-column-size/" %}
+
+{% embed url="https://jojoldu.tistory.com/243" %}
+
+{% embed url="https://isstory83.tistory.com/131" %}
+
+{% embed url="https://zorba91.tistory.com/293" %}
+
 \*\*\*\*
 
 \*\*\*\*
