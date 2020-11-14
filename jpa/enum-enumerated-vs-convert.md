@@ -26,3 +26,9 @@ STRING 설정은 문자열 자체가 저장되기 때문에 DB 공간 낭비가 
 
 
 
+{% embed url="https://tech.yangs.kr/16" %}
+
+
+
+
+
