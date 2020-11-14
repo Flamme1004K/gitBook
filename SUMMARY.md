@@ -33,6 +33,7 @@
     * [lambda - Collection](java/java8/lambda-collection.md)
     * [Optional](java/java8/optional.md)
 * [JPA](jpa/README.md)
+  * [Enum\(@enumerated vs @convert\)](jpa/enum-enumerated-vs-convert.md)
   * [JPA Study](jpa/jpa-study/README.md)
     * [Chap1](jpa/jpa-study/chap1.md)
     * [Chap3](jpa/jpa-study/chap3-1.md)
