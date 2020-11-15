@@ -117,6 +117,7 @@
     * [tar 명령어](linux/linux-202003/tar-1.md)
     * [ln -s 심볼릭 링크](linux/linux-202003/ln-s.md)
 * [Database](database/README.md)
+  * [Redis](database/redis.md)
   * [손에 잡히는 10분 SQL](database/10-sql/README.md)
     * [Explain](database/10-sql/explain.md)
     * [인덱스](database/10-sql/undefined.md)
