@@ -1,52 +1,6 @@
 # Table of contents
 
 * [소개](README.md)
-* [Architecture](architecture/README.md)
-  * [UML](architecture/uml.md)
-  * [DDD\(Domain-driven design\)](architecture/ddd-domain-driven-design/README.md)
-    * [DDD-Lite정리](architecture/ddd-domain-driven-design/ddd-lite.md)
-    * [DDD-START](architecture/ddd-domain-driven-design/ddd-start/README.md)
-      * [Chapter5 리포지터리의 조회 기능](architecture/ddd-domain-driven-design/ddd-start/chapter5.md)
-      * [Chapter4 리포지터리와 모델 구현](architecture/ddd-domain-driven-design/ddd-start/chapter4.md)
-      * [Chapter3 애그리거트](architecture/ddd-domain-driven-design/ddd-start/chapter3.md)
-      * [Chapter2 아키텍쳐 개요](architecture/ddd-domain-driven-design/ddd-start/chapter2.md)
-      * [Chapter1 도메인 모델의 시작](architecture/ddd-domain-driven-design/ddd-start/chapter1.md)
-* [Semina](semina/README.md)
-  * [Version control -1 \(SVN/GIT\)](semina/git.md)
-  * [Version control - 2 \(GIT\)](semina/version-control-2-git.md)
-  * [PostMan](semina/postman.md)
-  * [JMeter](semina/jmeter.md)
-* [Linux](linux/README.md)
-  * [손에 잡히는 10분 SQL](linux/10-sql.md)
-  * [리눅스 대소문자](linux/undefined.md)
-  * [Linux\(202003\)](linux/linux-202003/README.md)
-    * [rm](linux/linux-202003/rm.md)
-    * [diff](linux/linux-202003/diff.md)
-    * [cp](linux/linux-202003/cp.md)
-    * [mv](linux/linux-202003/mv.md)
-    * [ps aux \| grep 프로세스이름](linux/linux-202003/ps-aux-or-grep.md)
-    * [tar 압축 시 어떻게 심볼릭 링크도 같이 압축할까?](linux/linux-202003/tar.md)
-    * [tar 명령어](linux/linux-202003/tar-1.md)
-    * [ln -s 심볼릭 링크](linux/linux-202003/ln-s.md)
-* [Project](project.md)
-* [Network](network/README.md)
-  * [Tcp HandShake](network/tcp-handshake.md)
-  * [Cookie and Session](network/cookie-and-session.md)
-  * [그림으로 배우는 HTTP NetWork Basic](network/http-network-basic.md)
-  * [SSO\(Single Sign On\)](network/sso-single-sign-on.md)
-* [Common](common/README.md)
-  * [코드리뷰](common/undefined/README.md)
-    * [2020-09-10](common/undefined/2020-09-10.md)
-    * [2020-09-03](common/undefined/2020-09-03.md)
-    * [2020-09-02](common/undefined/2020-09-02.md)
-  * [CleanCode](common/cleancode/README.md)
-    * [명명짓기](common/cleancode/undefined.md)
-* [Android](android.md)
-* [WireShark](wireshark/README.md)
-  * [WireShark 패킷분석](wireshark/wireshark.md)
-* [Infra](infra.md)
-* [Algoritm](algoritm/README.md)
-  * [1.](algoritm/1..md)
 
 ## Language
 
@@ -131,7 +85,6 @@
 
 * [Tomcat](server/tomcat/README.md)
   * [Virtual Host\(Port\)](server/tomcat/virtual-host-port.md)
-* [Untitled](server/untitled.md)
 
 ## API
 
@@ -166,4 +119,60 @@
     * [인덱스](database-1/database/10-sql/undefined.md)
     * [Study2](database-1/database/10-sql/study2.md)
   * [데이터베이스 식별자 선택 전략](database-1/database/undefined.md)
+
+## Network <a id="network-1"></a>
+
+* [WireShark](network-1/wireshark/README.md)
+  * [WireShark 패킷분석](network-1/wireshark/wireshark.md)
+* [Study](network-1/network/README.md)
+  * [Android](network-1/network/android.md)
+  * [Tcp HandShake](network-1/network/tcp-handshake.md)
+  * [Cookie and Session](network-1/network/cookie-and-session.md)
+  * [그림으로 배우는 HTTP NetWork Basic](network-1/network/http-network-basic.md)
+  * [SSO\(Single Sign On\)](network-1/network/sso-single-sign-on.md)
+
+## OS
+
+* [Linux](os/linux/README.md)
+  * [손에 잡히는 10분 SQL](os/linux/10-sql.md)
+  * [리눅스 대소문자](os/linux/undefined.md)
+  * [Linux\(202003\)](os/linux/linux-202003/README.md)
+    * [rm](os/linux/linux-202003/rm.md)
+    * [diff](os/linux/linux-202003/diff.md)
+    * [cp](os/linux/linux-202003/cp.md)
+    * [mv](os/linux/linux-202003/mv.md)
+    * [ps aux \| grep 프로세스이름](os/linux/linux-202003/ps-aux-or-grep.md)
+    * [tar 압축 시 어떻게 심볼릭 링크도 같이 압축할까?](os/linux/linux-202003/tar.md)
+    * [tar 명령어](os/linux/linux-202003/tar-1.md)
+    * [ln -s 심볼릭 링크](os/linux/linux-202003/ln-s.md)
+
+## Common <a id="common-1"></a>
+
+* [Semina](common-1/semina/README.md)
+  * [Version control -1 \(SVN/GIT\)](common-1/semina/git.md)
+  * [Version control - 2 \(GIT\)](common-1/semina/version-control-2-git.md)
+  * [PostMan](common-1/semina/postman.md)
+  * [JMeter](common-1/semina/jmeter.md)
+* [코드리뷰](common-1/undefined/README.md)
+  * [2020-09-10](common-1/undefined/2020-09-10.md)
+  * [2020-09-03](common-1/undefined/2020-09-03.md)
+  * [2020-09-02](common-1/undefined/2020-09-02.md)
+* [CleanCode](common-1/cleancode/README.md)
+  * [명명짓기](common-1/cleancode/undefined.md)
+
+## Architecture <a id="architecture-1"></a>
+
+* [DDD\(Domain-driven design\)](architecture-1/ddd-domain-driven-design/README.md)
+  * [DDD-Lite정리](architecture-1/ddd-domain-driven-design/ddd-lite.md)
+  * [DDD-START](architecture-1/ddd-domain-driven-design/ddd-start/README.md)
+    * [Chapter5 리포지터리의 조회 기능](architecture-1/ddd-domain-driven-design/ddd-start/chapter5.md)
+    * [Chapter4 리포지터리와 모델 구현](architecture-1/ddd-domain-driven-design/ddd-start/chapter4.md)
+    * [Chapter3 애그리거트](architecture-1/ddd-domain-driven-design/ddd-start/chapter3.md)
+    * [Chapter2 아키텍쳐 개요](architecture-1/ddd-domain-driven-design/ddd-start/chapter2.md)
+    * [Chapter1 도메인 모델의 시작](architecture-1/ddd-domain-driven-design/ddd-start/chapter1.md)
+* [UML](architecture-1/uml.md)
+
+## Infra
+
+* [Study](infra/study.md)
 
