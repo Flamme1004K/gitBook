@@ -159,6 +159,7 @@
   * [2020-09-10](common-1/undefined/2020-09-10.md)
   * [2020-09-03](common-1/undefined/2020-09-03.md)
   * [2020-09-02](common-1/undefined/2020-09-02.md)
+* [자료구조](common-1/undefined-1.md)
 * [CleanCode](common-1/cleancode/README.md)
   * [명명짓기](common-1/cleancode/undefined.md)
 
