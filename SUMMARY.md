@@ -5,7 +5,6 @@
 ## Language
 
 * [JAVA](language/java/README.md)
-  * [DesignPattern](language/java/designpattern.md)
   * [Nio](language/java/nio.md)
   * [volatile](language/java/volatile.md)
   * [Future과 Promise](language/java/future-promise.md)
@@ -20,6 +19,8 @@
     * [함수지향적](language/java/java8/undefined.md)
     * [lambda - Collection](language/java/java8/lambda-collection.md)
     * [Optional](language/java/java8/optional.md)
+* [JavaScript](language/javascript.md)
+* [Kotlin](language/kotlin.md)
 
 ## Framwork
 
@@ -148,6 +149,7 @@
 
 ## Common <a id="common-1"></a>
 
+* [DesignPattern](common-1/designpattern.md)
 * [Semina](common-1/semina/README.md)
   * [Version control -1 \(SVN/GIT\)](common-1/semina/git.md)
   * [Version control - 2 \(GIT\)](common-1/semina/version-control-2-git.md)
