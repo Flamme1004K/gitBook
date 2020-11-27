@@ -5,6 +5,7 @@
 ## Language
 
 * [JAVA](language/java/README.md)
+  * [Text](language/java/text.md)
   * [RxJava](language/java/rxjava.md)
   * [Nio](language/java/nio.md)
   * [volatile](language/java/volatile.md)
