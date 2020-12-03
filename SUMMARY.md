@@ -169,6 +169,7 @@
     * [Repositroy\(20201119\)](common-1/undefined/repository/repositroy-20201119.md)
     * [Repositroy\(20201117\)](common-1/undefined/repository/repositroy-20201117.md)
 * [자료구조](common-1/undefined-1/README.md)
+  * [시간복잡도](common-1/undefined-1/undefined-1.md)
   * [스택/큐](common-1/undefined-1/undefined.md)
 * [CleanCode](common-1/cleancode/README.md)
   * [명명짓기](common-1/cleancode/undefined.md)
