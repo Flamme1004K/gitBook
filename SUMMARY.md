@@ -207,4 +207,5 @@
 ---
 
 * [OOP VS FP](oop-vs-fp.md)
+* [Declarative Programming](declarative-programming.md)
 
