@@ -197,15 +197,15 @@
 
 ## Programming
 
-* [Reactive Programming](programming/reactive-programming.md)
-* [Imperative Programming](programming/imperative-programming.md)
-* [Functional Programming](programming/functional-programming.md)
-* [Object Oriented Programing](programming/object-oriented-programing.md)
-* [ProcedureOriented Programming](programming/procedureoriented-programming.md)
-* [RX\(ReactiveX\)](programming/rx-reactivex.md)
-
 ---
 
-* [OOP VS FP](oop-vs-fp.md)
-* [Declarative Programming](declarative-programming.md)
+* [프로그래밍의 종류](undefined/README.md)
+  * [Reactive Programming](undefined/reactive-programming.md)
+  * [Imperative Programming](undefined/imperative-programming.md)
+  * [Functional Programming](undefined/functional-programming.md)
+  * [Object Oriented Programing](undefined/object-oriented-programing.md)
+  * [ProcedureOriented Programming](undefined/procedureoriented-programming.md)
+  * [RX\(ReactiveX\)](undefined/rx-reactivex.md)
+  * [OOP VS FP](undefined/oop-vs-fp.md)
+  * [Declarative Programming](undefined/declarative-programming.md)
 
