@@ -204,3 +204,7 @@
 * [ProcedureOriented Programming](programming/procedureoriented-programming.md)
 * [RX\(ReactiveX\)](programming/rx-reactivex.md)
 
+---
+
+* [OOP VS FP](oop-vs-fp.md)
+

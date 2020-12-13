@@ -15,6 +15,8 @@ description: >-
 
 filter, map, reduce와 같은 메서드를 활용하는 것이 대표적인 Functional Programming의 예
 
+
+
 ##  Functional Programming에 대해서 알아둬야할 것 
 
 1. Pure functions
