@@ -193,6 +193,7 @@
 ## Algorithm
 
 * [알고리즘스터디](algorithm/undefined/README.md)
+  * [카펫](algorithm/undefined/undefined-1.md)
   * [더맵게](algorithm/undefined/undefined.md)
 
 ## Programming
