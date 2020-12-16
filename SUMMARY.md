@@ -152,6 +152,7 @@
 ## Common <a id="common-1"></a>
 
 * [DesignPattern](common-1/designpattern.md)
+* [CQRS](common-1/cqrs.md)
 * [Semina](common-1/semina/README.md)
   * [Version control -1 \(SVN/GIT\)](common-1/semina/git.md)
   * [Version control - 2 \(GIT\)](common-1/semina/version-control-2-git.md)
