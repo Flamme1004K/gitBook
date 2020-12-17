@@ -140,6 +140,7 @@
   * [손에 잡히는 10분 SQL](os/linux/10-sql.md)
   * [리눅스 대소문자](os/linux/undefined.md)
   * [Linux\(202003\)](os/linux/linux-202003/README.md)
+    * [ln -Tfs](os/linux/linux-202003/ln-tfs.md)
     * [rm](os/linux/linux-202003/rm.md)
     * [diff](os/linux/linux-202003/diff.md)
     * [cp](os/linux/linux-202003/cp.md)
