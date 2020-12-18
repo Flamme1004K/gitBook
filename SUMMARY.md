@@ -140,6 +140,7 @@
   * [손에 잡히는 10분 SQL](os/linux/10-sql.md)
   * [리눅스 대소문자](os/linux/undefined.md)
   * [Linux\(202003\)](os/linux/linux-202003/README.md)
+    * [//와 / 의 차이](os/linux/linux-202003/undefined-1.md)
     * [소프트링크와 하드링크의 차이](os/linux/linux-202003/undefined.md)
     * [ln -Tfs](os/linux/linux-202003/ln-tfs.md)
     * [rm](os/linux/linux-202003/rm.md)
