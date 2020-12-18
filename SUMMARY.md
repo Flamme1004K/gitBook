@@ -162,6 +162,7 @@
   * [PostMan](common-1/semina/postman.md)
   * [JMeter](common-1/semina/jmeter.md)
 * [코드리뷰](common-1/undefined/README.md)
+  * [파일 삭제 분투기](common-1/undefined/undefined-1.md)
   * [신입 코드리뷰](common-1/undefined/undefined/README.md)
     * [2020-09-02](common-1/undefined/undefined/2020-09-02.md)
     * [2020-09-03](common-1/undefined/undefined/2020-09-03.md)
