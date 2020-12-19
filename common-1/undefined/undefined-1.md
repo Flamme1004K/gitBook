@@ -4,7 +4,7 @@
 
 발생 :
 
-1. 사조 톡 이미지가 계속 변경되지 않은 이슈가 발생.
+1. xx 톡 이미지가 계속 변경되지 않은 이슈가 발생.
 2. 설정에 대한 문제가 있을 것 같아 서버 쪽을 찾는 도중 syncServer에서 
 
     File 저장소에 대한 심볼릭 링크가 없는 것을 확인.
@@ -13,7 +13,7 @@
 
     만들기 때문에 파일내에 최근까지 동기화된 이미지가 다 있었음.
 
-4. 동기화 된 이미지를 일단 ezTalkWebAPI 서버내의 이미지 파일로 다 옮기는 작업을 수행.
+4. 동기화 된 이미지를 일단 TalkWebAPI 서버내의 이미지 파일로 다 옮기는 작업을 수행.
 5. 그 후 심볼릭 링크를 다시 걸었는데 심볼릭 링크의 루트가 깔끔하지가 않음. \( fileroot//\) 
 6. //를 / 를 지워주기 위해 rm -rf fileroot/ 를 해버림.
 7. 삭제가 되지 않아서 다시 rm -rf fileroot 로 했더니 심볼릭 링크가 삭제됨.
@@ -28,10 +28,11 @@
 
 * 심볼릭 링크를 교체할때는 ln -Tfs 명령어를 사용하여 심볼릭 링크를 교체하는 것이 좋음.
 * rm -r로 삭제하여 심볼링 링크만 삭제되는 것을 확인하여 삭제
-* 현재 ezTalkWebAPI, ezTalkServer, ezTalkSyncServe는 root 계정으로만 실행/삭제/수정이 가능함. 이것을 일반 계정으로도 가능할 수 있게 
+* 현재 TalkWebAPI, TalkServer, TalkSyncServe는 root 계정으로만 실행/삭제/수정이 가능함. 이것을 일반 계정으로도 가능할 수 있게 
 
   하면 될 듯.
 
-* 
+* fileRoot의 경로를 확실하게 잡아주자.
+
 [https://zetawiki.com/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4\_%EC%8B%AC%EB%B3%BC%EB%A6%AD%EB%A7%81%ED%81%AC\_%EC%82%AD%EC%A0%9C](https://zetawiki.com/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4_%EC%8B%AC%EB%B3%BC%EB%A6%AD%EB%A7%81%ED%81%AC_%EC%82%AD%EC%A0%9C)
 
