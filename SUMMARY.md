@@ -129,6 +129,7 @@
 * [WireShark](network-1/wireshark/README.md)
   * [WireShark 패킷분석](network-1/wireshark/wireshark.md)
 * [Study](network-1/network/README.md)
+  * [손에 잡히는 10분 SQL](network-1/network/10-sql.md)
   * [Android](network-1/network/android.md)
   * [Tcp HandShake](network-1/network/tcp-handshake.md)
   * [Cookie and Session](network-1/network/cookie-and-session.md)
@@ -138,7 +139,7 @@
 ## OS
 
 * [Linux](os/linux/README.md)
-  * [손에 잡히는 10분 SQL](os/linux/10-sql.md)
+  * [유용한 커맨드](os/linux/undefined-2.md)
   * [리눅스 대소문자](os/linux/undefined.md)
   * [소프트링크와 하드링크의 차이](os/linux/undefined-1.md)
   * [ln -Tfs](os/linux/ln-tfs.md)
