@@ -6,7 +6,5 @@ cat localhost\_access\_log.2020-12-24.txt \| awk '{ if \($2 &gt; 200\) { print }
 
 wc-l 줄수 세기
 
-tcp dump
 
-tcpdump -vv -nn -i bond0 host 1.232.121.30 and tcp port 31032 -w sajo.pcap
 
