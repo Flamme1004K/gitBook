@@ -196,8 +196,6 @@
 
 ## Infra
 
-* [Study](infra/study.md)
-
 ## Algorithm
 
 * [알고리즘스터디](algorithm/undefined/README.md)
@@ -219,4 +217,5 @@
   * [OOP VS FP](undefined/oop-vs-fp.md)
   * [Declarative Programming](undefined/declarative-programming.md)
 * [IOS](ios.md)
+* [Study](study.md)
 
