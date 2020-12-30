@@ -116,6 +116,7 @@
 * [Redis](database-1/redis.md)
 * [MSSQL](database-1/mssql.md)
 * [MYSQL](database-1/mysql/README.md)
+  * [SlowQuery Analyzing](database-1/mysql/slowquery-analyzing.md)
   * [PushNotification Stress Test](database-1/mysql/pushnotification-stress-test.md)
 * [Study](database-1/database/README.md)
   * [손에 잡히는 10분 SQL](database-1/database/10-sql/README.md)
