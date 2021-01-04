@@ -36,7 +36,7 @@ JPA의 내부 동작 방식을 이해하지 못하면 문제가 발생했을 때
 
 이러한 이유로 개발자는 싱글 스레드 애플리케이션처럼 단순하게 개발할 수 있고 비지니스 로직 개발에 집중 할 수 있다.
 
-![](../../../.gitbook/assets/image%20%2813%29.png)
+![](../../../../../.gitbook/assets/image%20%2813%29.png)
 
 스프링 프레임워크를 사용하면 Service Layer에서 @Transactional 어노테이션을 선언해서 트랜잭션을 시작한다.
 
@@ -52,7 +52,7 @@ JPA의 내부 동작 방식을 이해하지 못하면 문제가 발생했을 때
 
 {% embed url="https://stackoverflow.com/questions/36583185/spring-data-jpa-could-not-initialize-proxy-no-session-with-methods-marke" %}
 
-![](../../../.gitbook/assets/image%20%2815%29.png)
+![](../../../../../.gitbook/assets/image%20%2815%29.png)
 
 대상 메소드를 호출하기 직전에 트랜잭션을 시작하고, 대상 메소드가 정상 종료되면 트랜잭션을 커밋하면서 종료한다.
 
@@ -102,7 +102,7 @@ JPA의 내부 동작 방식을 이해하지 못하면 문제가 발생했을 때
    * 서비스 계층을 호출해서 비즈니스 로직을 실행한다.
    * 리포지토리를 직접 호출해서 뷰가 요구하는 엔티티를 찾는다.
 
-![](../../../.gitbook/assets/image%20%2816%29.png)
+![](../../../../../.gitbook/assets/image%20%2816%29.png)
 
 ### OSIV\(Open Session In View\)
 
@@ -120,7 +120,7 @@ JPA의 내부 동작 방식을 이해하지 못하면 문제가 발생했을 때
 
 즉 OSIV를 사용하기는 하지만 트랜잭션은 비즈니스 계층에서만 사용한다는 뜻이다.
 
-![](../../../.gitbook/assets/image%20%2814%29.png)
+![](../../../../../.gitbook/assets/image%20%2814%29.png)
 
 1. 클라이언트의 요청이 들어오면 서블릿 필터나, 스프링 인터셉터에서 영속성 컨텍스트를 생성한다. 이때는 트랜잭션은 시작하지는 않는다.
 2. 서비스 계층에서 @Transactional로 트랜잭션을 시작할 떄 1번에서 미리 생성해둔 영속성 컨텍스트를 찾아와서 트랜잭션을 시작한다.
