@@ -1,5 +1,5 @@
 ---
-description: 'github : https://github.com/Flamme1004K'
+description: Flamme 란? 디저트나 음식을 플랑베해서 손님 앞에 서빙할 때 타오르는 불꽃.
 ---
 
 # IntroduceMyself
@@ -19,6 +19,22 @@ description: 'github : https://github.com/Flamme1004K'
   - 2019년 5월부터 12월 대덕인재개발원 \(수료\)
 
  - 2020년 1월 2일 ~ 현재\(2021년 1월 4일\) 그룹웨어 회사 모바일 서버 개발
+
+
+
+ 운영 중 페이
+
+1 . GITHUB : 
+
+{% embed url="https://github.com/Flamme1004K" %}
+
+2 . GITBOOK : 
+
+{% embed url="https://flamme1004.gitbook.io/flamme-dev/" %}
+
+
+
+
 
 
 
