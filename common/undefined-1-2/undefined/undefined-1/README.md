@@ -2,7 +2,7 @@
 
  현재까지 읽었던 개발 서적
 
- 1. 러닝 자바스크립
+ 1. 러닝 자바스크립트 
 
 {% embed url="http://digital.kyobobook.co.kr/digital/ebook/ebookDetail.ink?selectedLargeCategory=001&barcode=4808968483387&orderClick=LEa&Kc=" %}
 
