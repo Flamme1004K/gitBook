@@ -24,3 +24,7 @@ description: 읽고 있는 책입니다.
 
 10. 엔지니어를 위한 네트워크 입문 
 
+11. Effective Java
+
+12. Modern Java In Action
+
