@@ -1,6 +1,6 @@
 # Table of contents
 
-* [소개](README.md)
+* [IntroduceMyself](README.md)
 * [회고록](undefined/README.md)
   * [2020년](undefined/2020.md)
 

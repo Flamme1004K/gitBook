@@ -1,14 +1,18 @@
 ---
-description: 안녕하세요. Flamme입니다.
+description: 'github : https://github.com/Flamme1004K'
 ---
 
-# 소개
+# IntroduceMyself
 
-공부하고 있는 내용을 써놓은 GitBook 사이트입니다.
+ 
 
-평범한게 좋다!
+![](.gitbook/assets/kakaotalk_photo_2021-01-04-16-41-50.jpeg)
 
-리뉴얼 중입니다.
+안녕하세요. Flamme의 Gitbook입니다.
+
+해당 GitBook은 개인 공부 및 업무에 대한 것을 정리해놓은 사이트 입니다.
+
+
 
 
 
