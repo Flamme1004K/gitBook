@@ -1,8 +1,12 @@
 # Table of contents
 
 * [IntroduceMyself](README.md)
-* [회고록](undefined/README.md)
-  * [2020년](undefined/2020.md)
+
+## GOAL
+
+* [2021년 목표](goal/2021.md)
+* [회고록](goal/undefined/README.md)
+  * [2020년](goal/undefined/2020.md)
 
 ## COMMON
 
