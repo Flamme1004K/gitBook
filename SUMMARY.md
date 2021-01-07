@@ -93,6 +93,7 @@
   * [Vert.x](info-1/framework/vert.x.md)
   * [Spring](info-1/framework/spring/README.md)
     * [JPA](info-1/framework/spring/jpa/README.md)
+      * [QueryDSL N+1 문제\(@OneToOne\)](info-1/framework/spring/jpa/querydsl-n+1-onetoone.md)
       * [QueryDSL설정](info-1/framework/spring/jpa/querydsl.md)
       * [CreationTimestamp](info-1/framework/spring/jpa/creationtimestamp.md)
       * [Enum\(@enumerated vs @convert\)](info-1/framework/spring/jpa/enum-enumerated-vs-convert.md)
