@@ -50,13 +50,5 @@ Composite key에 만약 @ManyToOne이 들어가야 된다면 IdClass를 사용�
 
  즉 gId는 생략해도 된다는 것이다.
 
- 간혹 하이버네이트의 오류인 attempted to assign id from null one-to-one property :
-
- 나온다면,
-
-{% embed url="https://cnpnote.tistory.com/entry/SPRING-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%EB%8C%80%EC%8B%A0-Spring-JPA-Hibernate-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EA%B0%95%EC%A0%9C-%EC%82%BD%EC%9E%85" %}
-
- 설정이 필요하다.
-
 
 

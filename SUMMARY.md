@@ -93,6 +93,7 @@
   * [Vert.x](info-1/framework/vert.x.md)
   * [Spring](info-1/framework/spring/README.md)
     * [JPA](info-1/framework/spring/jpa/README.md)
+      * [SpringData-JPA에서 Save, SaveAll](info-1/framework/spring/jpa/springdata-jpa-save-saveall.md)
       * [@CompositeKey에 ManyToOne JoinColumn이 있을 경우](info-1/framework/spring/jpa/compositekey-manytoone-joincolumn.md)
       * [QueryDSL N+1 문제\(@OneToOne\)](info-1/framework/spring/jpa/querydsl-n+1-onetoone.md)
       * [QueryDSL설정](info-1/framework/spring/jpa/querydsl.md)
