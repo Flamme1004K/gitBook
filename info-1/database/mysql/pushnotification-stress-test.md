@@ -14,7 +14,7 @@ PushNotification Stress Test 방법 입니다.
 
 이벤트 스케쥴러가 On인 상태에서 현재 스케쥴러를 만들면 바로 실행이 되기 때문에
 
-특별한 이벤트 스케쥴러가 없다면 event Scheduler를 off하여 등록하고 그 후에 on 해주시길 바랍니다.`1 2` `SET GLOBAL event_scheduler = ON; -- 이벤트 스케쥴러 On SET GLOBAL event_scheduler = OFF; -- 이벤트 스케쥴러 off`
+특별한 이벤트 스케쥴러가 없다면 event Scheduler를 off하여 등록하고 그 후에 on 해주시길 바랍니다.`SET GLOBAL event_scheduler = ON; -- 이벤트 스케쥴러 On SET GLOBAL event_scheduler = OFF; -- 이벤트 스케쥴러 off`
 
 또한 이벤트 스케쥴러는 사용자에 대한 이벤트 사용권한이 필요한 작업이므로 root 계정 혹은 해당 계정에 권한을 주시길 바랍니다.
 
