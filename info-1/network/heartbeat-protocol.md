@@ -1,12 +1,12 @@
 # HeartBeat Protocol
 
- 메신저 Heart Beat에 대하여 찾아보았다. 
+메신저 Heart Beat에 대하여 찾아보았다. 
 
 지금까지 찾은 내용은 두개이다.
 
- HeartBeat \(Computing\) 과 HeartBeat network
+HeartBeat \(Computing\) 과 HeartBeat network
 
- messenger에다가만 HeartBeat를 사용할 뿐만 아니라 network에서의 클러스터링에서도
+messenger에다가만 HeartBeat를 사용할 뿐만 아니라 network에서의 클러스터링에서도
 
 network heartBeat는 loadBalance 에서 주기적인 Heart Beat를 주다가 끊겼을 경우 fail over되어 
 
