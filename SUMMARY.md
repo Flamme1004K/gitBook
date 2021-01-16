@@ -37,6 +37,7 @@
         * [Chap 13. 웹 애플리케이션과 영속성 관리](common/undefined-3/undefined-4/2020/jpa-study/untitled.md)
         * [Chap14](common/undefined-3/undefined-4/2020/jpa-study/chap14.md)
   * [코드리뷰](common/undefined-3/undefined-1/README.md)
+    * [개발 생각](common/undefined-3/undefined-1/undefined-2.md)
     * [APNs 라이브러리 교체](common/undefined-3/undefined-1/apns.md)
     * [파일 삭제 분투기](common/undefined-3/undefined-1/undefined-1.md)
     * [신입 코드리뷰](common/undefined-3/undefined-1/undefined/README.md)
