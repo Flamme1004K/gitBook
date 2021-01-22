@@ -24,7 +24,7 @@ description: '2021-01-22'
 
 ## JVM 의 실행 순서
 
-###  JRE 실행 시 JVM Runtime Data Area 적
+###  JRE 실행 시 JVM Runtime Data Area 적재 
 
 1. 자바 컴파일러가 .Java 파일을 컴파일하면 .class 파일이 생성된다.
 2. .class 파일들은 Class Loader를 통하여 Runtime Data Area 형태로 메모리에 적재 된다. 
@@ -33,7 +33,7 @@ description: '2021-01-22'
    1.  Method인 경우 class -&gt; library -&gt; class path 순으로 찾아서 검증되어 검증 완료되면 Method Area로 들어가게 된다.
    2. Class Variable는 Reference Variable 만 저장되고 그 후 Heap에 선언되는 instance Variable의 연결고리가 된다.
 
-###   Method 호
+###   Method 호출 
 
 1. Thread가 할당되면 Stack Area는 각 Thread 마다 하나씩 존재하게 된다.
 2. 해당 Thread에서 Method가 호출할 때마다 Stack Area에 쌓이게 된다.
