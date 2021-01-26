@@ -11,6 +11,7 @@
 ## COMMON
 
 * [자료구조](common/undefined-1-1/README.md)
+  * [시간복잡도](common/undefined-1-1/undefined-1.md)
   * [스택/큐](common/undefined-1-1/undefined.md)
 * [코드리뷰/스터디/세미나](common/undefined-3/README.md)
   * [Semina](common/undefined-3/semina/README.md)
