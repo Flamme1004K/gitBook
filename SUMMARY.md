@@ -82,6 +82,7 @@
   * [Declarative Programming](info-1/undefined/declarative-programming.md)
 * [Language](info-1/language-1/README.md)
   * [Kotlin](info-1/language-1/kotlin/README.md)
+    * [coroutine](info-1/language-1/kotlin/coroutine.md)
     * [Kotlin JVM](info-1/language-1/kotlin/kotlin-jvm.md)
   * [JavaScript](info-1/language-1/javascript.md)
   * [JAVA](info-1/language-1/java/README.md)
