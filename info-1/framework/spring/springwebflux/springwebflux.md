@@ -69,5 +69,7 @@ Reactive Stream 명세는 따로 떨어져 있는 컴포넌트 사이의 async s
 
 {% embed url="https://devahea.github.io/2019/04/21/Spring-WebFlux%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%A0%81%EC%9D%80-%EB%A6%AC%EC%86%8C%EC%8A%A4%EB%A1%9C-%EB%A7%8E%EC%9D%80-%ED%8A%B8%EB%9E%98%ED%94%BD%EC%9D%84-%EA%B0%90%EB%8B%B9%ED%95%A0%EA%B9%8C/" %}
 
+[https://www.slideshare.net/arawnkr/reactive-web-servlet-async-nonblocking-io-73838876](https://www.slideshare.net/arawnkr/reactive-web-servlet-async-nonblocking-io-73838876)
+
 
 
