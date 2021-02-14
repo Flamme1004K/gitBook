@@ -71,5 +71,7 @@ Reactive Stream 명세는 따로 떨어져 있는 컴포넌트 사이의 async s
 
 [https://www.slideshare.net/arawnkr/reactive-web-servlet-async-nonblocking-io-73838876](https://www.slideshare.net/arawnkr/reactive-web-servlet-async-nonblocking-io-73838876)
 
+{% embed url="https://spring.io/blog/2019/04/12/going-reactive-with-spring-coroutines-and-kotlin-flow" %}
+
 
 
