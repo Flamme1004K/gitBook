@@ -101,6 +101,7 @@
   * [Xamarin](info-1/framework/xamarin.md)
   * [Vert.x](info-1/framework/vert.x.md)
   * [Spring](info-1/framework/spring/README.md)
+    * [JsonAnnotation](info-1/framework/spring/jsonannotation.md)
     * [Spring Data R2DBC](info-1/framework/spring/spring-data-r2dbc.md)
     * [SpringWebFlux](info-1/framework/spring/springwebflux/README.md)
       * [SpringWebFlux란?](info-1/framework/spring/springwebflux/springwebflux.md)
