@@ -171,6 +171,7 @@
 * [OS](info-1/os-1/README.md)
   * [IOS](info-1/os-1/ios.md)
   * [Linux](info-1/os-1/linux/README.md)
+    * [IdConfig](info-1/os-1/linux/idconfig.md)
     * [유용한 커맨드](info-1/os-1/linux/undefined-2.md)
     * [리눅스 대소문자](info-1/os-1/linux/undefined.md)
     * [소프트링크와 하드링크의 차이](info-1/os-1/linux/undefined-1.md)
