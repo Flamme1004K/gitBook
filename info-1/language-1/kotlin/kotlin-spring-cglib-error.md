@@ -1,0 +1,2 @@
+# Kotlin Spring CGLIB Error
+
