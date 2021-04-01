@@ -32,5 +32,9 @@ description: 읽고 있는 책입니다.
 
 14. RealMySql
 
-15. 폴리글랏 프로그래
+15. 폴리글랏 프로그래밍
+
+16. [https://www.manning.com/books/vertx-in-action](https://www.manning.com/books/vertx-in-action)
+
+
 
