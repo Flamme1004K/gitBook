@@ -11,7 +11,7 @@
 sudo : 현재 계정에서 다른 계정의 권한만 빌림
 
 * /etc/sudoers 파일에 지정된 사용자만 sudo 명령어를 사용할 수 있다.
-* sudo 
+* sudo  : 해당 계정이 root 권한을 가지게함.
   * i -&gt; login
   * s -&gt; target user에 대한 shell을 사용할 수 있음.
 * journalctl -t sudo -f 를 통하여 sudo 명령어를 이용한 제스처를 볼 수 있음.
