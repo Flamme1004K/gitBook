@@ -180,7 +180,7 @@
   * [IOS](info-1/os-1/ios.md)
   * [Linux](info-1/os-1/linux/README.md)
     * [Linux](info-1/os-1/linux/linux/README.md)
-      * [Sudo](info-1/os-1/linux/linux/sudo.md)
+      * [Su, Sudo](info-1/os-1/linux/linux/sudo.md)
       * [File Directory](info-1/os-1/linux/linux/file-directory.md)
     * [IdConfig](info-1/os-1/linux/idconfig.md)
     * [유용한 커맨드](info-1/os-1/linux/undefined-2.md)

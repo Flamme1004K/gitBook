@@ -1,4 +1,4 @@
-# Sudo
+# Su, Sudo
 
  sudo \(super user do\)
 
@@ -8,7 +8,19 @@
 
  여기서 가장 강한 권한이 바로 sudo이다. 
 
- 바로 super User, root의 권한으로 제스쳐를 할 수 있는 것이다.
+sudo : 현재 계정에서 다른 계정의 권한만 빌림
+
+* /etc/sudoers 파일에 지정된 사용자만 sudo 명령어를 사용할 수 있다.
+* sudo 
+  * i -&gt; login
+  * s -&gt; target user에 대한 shell을 사용할 수 있음.
+* journalctl -t sudo -f 를 통하여 sudo 명령어를 이용한 제스처를 볼 수 있음.
+
+su : 다른 계정으로 전환
+
+su - : 다른계정으로 전환 + 그 계정의 환경변수 적용
+
+who am i : 현재 계정에 대해 알려줌.
 
  
 
