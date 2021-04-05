@@ -16,7 +16,7 @@ sudo : 현재 계정에서 다른 계정의 권한만 빌림
   * s -&gt; target user에 대한 shell을 사용할 수 있음.
 * journalctl -t sudo -f 를 통하여 sudo 명령어를 이용한 제스처를 볼 수 있음.
 
-su : 다른 계정으로 전환
+su\(Swich user\) : 다른 계정으로 전환
 
 su - : 다른계정으로 전환 + 그 계정의 환경변수 적용
 
