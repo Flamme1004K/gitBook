@@ -16,6 +16,13 @@ ps aux \| grep 프로세스 이름
 
 - Z\(Zombie\) : 죽었지만 프로세스에 남아있는 상태 \(자원 낭비\)
 
+ **&lt;** high-priority \(not nice to other users\)  
+**N** low-priority \(nice to other users\)  
+**L** has pages locked into memory \(for real-time and custom IO\)  
+**s** is a session leader  
+**l** is multi-threaded \(using CLONE\_THREAD, like NPTL pthreads do\)  
+**+** is in the foreground process group
+
 aux 뜻 : : 프로세스 현황 표시, 유저지향,  터미널 제어 없이 프로세스 현황 보기
 
 grep 뜻 : 문자열을 찾는다.
