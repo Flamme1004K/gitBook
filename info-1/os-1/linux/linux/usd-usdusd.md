@@ -8,3 +8,7 @@
 
 {} - 명령어 그룹핑 
 
+
+
+ `mkdir` `test3 && {` `cd` `test3;` `touch` `abc;` `echo` `'success!!'` `} ||` `echo` `'There is no dir';`
+

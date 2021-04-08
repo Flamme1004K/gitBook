@@ -180,6 +180,7 @@
   * [IOS](info-1/os-1/ios.md)
   * [Linux](info-1/os-1/linux/README.md)
     * [Linux](info-1/os-1/linux/linux/README.md)
+      * [nohup](info-1/os-1/linux/linux/nohup.md)
       * [; , $ , $$, {}](info-1/os-1/linux/linux/usd-usdusd.md)
       * [쉘](info-1/os-1/linux/linux/undefined.md)
       * [rc.local](info-1/os-1/linux/linux/rc.local.md)
