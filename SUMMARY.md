@@ -183,6 +183,7 @@
     * [Active directory](info-1/os-1/window/active-directory.md)
   * [IOS](info-1/os-1/ios.md)
   * [Linux](info-1/os-1/linux/README.md)
+    * [samba/keroberos](info-1/os-1/linux/samba-keroberos.md)
     * [Linux](info-1/os-1/linux/linux/README.md)
       * [nohup](info-1/os-1/linux/linux/nohup.md)
       * [; , & , &&, {}](info-1/os-1/linux/linux/usd-usdusd.md)
