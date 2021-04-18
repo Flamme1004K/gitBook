@@ -4,7 +4,7 @@
 
 ![&#xC11C;&#xBC84; &#xC2E4;&#xD589; &#xC2DC; &#xB85C;&#xADF8;&#xC778; &#xD398;&#xC774;&#xC9C0;&#xAC00; &#xB098;&#xC628;&#xB2E4;.](../../../../../.gitbook/assets/2020-09-15-8.36.08.png)
 
-![&#xC11C;&#xBC84; &#xB2E8;&#xC5D0;&#xC11C; &#xC8FC;&#xB294; &#xC554;&#xD638;&#xB85C; user/ &#xD574;&#xB2F9; &#xD328;&#xC2A4;&#xB97C; &#xC801;&#xC5B4;&#xC11C; &#xB85C;&#xADF8;&#xC778;&#xC744; &#xD55C;&#xB2E4;.](../../../../../.gitbook/assets/2020-09-15-8.36.03.png)
+![&#xC11C;&#xBC84; &#xB2E8;&#xC5D0;&#xC11C; &#xC8FC;&#xB294; &#xC554;&#xD638;&#xB85C; user/ &#xD574;&#xB2F9; &#xD328;&#xC2A4;&#xB97C; &#xC801;&#xC5B4;&#xC11C; &#xB85C;&#xADF8;&#xC778;&#xC744; &#xD55C;&#xB2E4;.](../../../../../.gitbook/assets/2020-09-15-8.36.03%20%281%29.png)
 
 ![&#xB85C;&#xADF8;&#xC778; &#xD654;&#xBA74;](../../../../../.gitbook/assets/2020-09-15-8.36.25.png)
 
