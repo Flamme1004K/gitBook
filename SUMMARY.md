@@ -227,5 +227,6 @@
   * [MSSQL](info-1/database/mssql.md)
   * [데이터베이스 식별자 선택 전략](info-1/database/undefined.md)
 * [ETC](info-1/etc/README.md)
+  * [Talk](info-1/etc/talk.md)
   * [Untitled](info-1/etc/untitled.md)
 
