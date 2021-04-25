@@ -110,6 +110,7 @@
   * [NodeJs](info-1/framework/nodejs.md)
   * [Xamarin](info-1/framework/xamarin.md)
   * [Vert.x](info-1/framework/vert.x/README.md)
+    * [vert.x in action](info-1/framework/vert.x/vert.x-in-action.md)
     * [eventbus](info-1/framework/vert.x/eventbus.md)
   * [blockedthreadchecker](info-1/framework/blockedthreadchecker.md)
   * [Why.. not root run..](info-1/framework/why..-not-root-run...md)
