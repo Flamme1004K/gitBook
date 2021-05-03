@@ -4,7 +4,9 @@ description: '2021-01-22'
 
 # JVM\(Java Virtual Machine\)
 
-##  JVM이란 ? 
+## 좀 더 자세한 JVM의 원리를 알아보자. 기원알아보는게 좋다고한다. 
+
+## JVM이란 ? 
 
  ****JRE\(Java Runtime Environment\)에서 실행되어 컴파일 된 Java ByteCode를 실행시켜주는 가상머신
 
