@@ -16,3 +16,5 @@
 
 Kotlin also with run let 차
 
+kotlin any 알아보
+
