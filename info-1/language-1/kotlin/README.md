@@ -18,3 +18,9 @@ Kotlin also with run let 차
 
 kotlin any 알아보
 
+
+
+{% embed url="https://www.journaldev.com/20567/kotlin-interview-questions" %}
+
+
+
