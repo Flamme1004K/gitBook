@@ -20,6 +20,8 @@ kotlin any 알아보
 
 kotlin interview 알아보
 
+레퍼런스 참조에 ㄷ대해서 알아보
+
 
 
 {% embed url="https://www.journaldev.com/20567/kotlin-interview-questions" %}
