@@ -39,6 +39,8 @@ filter, map, reduce와 같은 메서드를 활용하는 것이 대표적인 Func
 
  공유 되는 데이터를 피하라.
 
+  꼭 ㅣ지켜야한다.
+
 ### Avoid Mutating state
 
  생성 후 그 상태를 바꿀 수 있는 것을 피하라. 
