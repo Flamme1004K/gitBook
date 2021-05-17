@@ -20,6 +20,10 @@ kotlin any 알아보
 
 kotlin interview 알아보
 
+ kotlin when을 좀 더 잘써보기
+
+Refernece this의 위험성을 알아보자
+
 레퍼런스 참조에 ㄷ대해서 알아보
 
 
