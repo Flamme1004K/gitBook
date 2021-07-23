@@ -118,6 +118,7 @@
   * [blockedthreadchecker](info-1/framework/blockedthreadchecker.md)
   * [Why.. not root run..](info-1/framework/why..-not-root-run...md)
   * [Spring](info-1/framework/spring/README.md)
+    * [Spring Test](info-1/framework/spring/spring-test.md)
     * [Kotlin](info-1/framework/spring/kotlin.md)
     * [ControllerAdvice 정리](info-1/framework/spring/controlleradvice.md)
     * [JsonAnnotation](info-1/framework/spring/jsonannotation.md)
