@@ -91,6 +91,7 @@
     * [Kotlin JVM](info-1/language-1/kotlin/kotlin-jvm.md)
   * [JavaScript](info-1/language-1/javascript.md)
   * [JAVA](info-1/language-1/java/README.md)
+    * [effective78](info-1/language-1/java/effective78.md)
     * [Exception](info-1/language-1/java/exception.md)
     * [JsonUnWrappers](info-1/language-1/java/jsonunwrappers.md)
     * [명명짓기](info-1/language-1/java/undefined.md)
