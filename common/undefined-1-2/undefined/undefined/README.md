@@ -36,5 +36,7 @@ description: 읽고 있는 책입니다.
 
 16. [https://www.manning.com/books/vertx-in-action](https://www.manning.com/books/vertx-in-action)
 
+17. Vue.js 프로젝트 일주일
+
 
 
