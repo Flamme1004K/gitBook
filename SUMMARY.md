@@ -231,6 +231,7 @@
 * [DataBase](info-1/database/README.md)
   * [Redis](info-1/database/redis.md)
   * [MYSQL](info-1/database/mysql/README.md)
+    * [Mysql TimeOut 설정](info-1/database/mysql/mysql-timeout.md)
     * [MysqlLog](info-1/database/mysql/mysqllog.md)
     * [SlowQuery Analyzing](info-1/database/mysql/slowquery-analyzing.md)
     * [PushNotification Stress Test](info-1/database/mysql/pushnotification-stress-test.md)
