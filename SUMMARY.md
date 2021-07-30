@@ -229,6 +229,7 @@
     * [WireShark 옵션](info-1/network/wireshark/wireshark-1.md)
     * [WireShark 패킷분석](info-1/network/wireshark/wireshark.md)
 * [DataBase](info-1/database/README.md)
+  * [DB락에 대해서 알아보기](info-1/database/db.md)
   * [Redis](info-1/database/redis.md)
   * [MYSQL](info-1/database/mysql/README.md)
     * [Mysql TimeOut 설정](info-1/database/mysql/mysql-timeout.md)
