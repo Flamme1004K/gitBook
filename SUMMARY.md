@@ -72,6 +72,8 @@
 
 ## INFO <a id="info-1"></a>
 
+* [intellij](info-1/intellij/README.md)
+  * [Command line is too long.](info-1/intellij/command-line-is-too-long..md)
 * [프로그래밍의 종류](info-1/undefined/README.md)
   * [Async Await](info-1/undefined/async-await.md)
   * [Reactive Programming](info-1/undefined/reactive-programming.md)
