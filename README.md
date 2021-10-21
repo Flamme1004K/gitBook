@@ -4,9 +4,9 @@ description: Flamme 란? 디저트나 음식을 플랑베해서 손님 앞에 �
 
 # IntroduceMyself
 
- 
+&#x20;
 
-![](.gitbook/assets/kakaotalk_photo\_2021-01-04-16-41-50.jpeg)
+![](.gitbook/assets/kakaotalk\_photo\_2021-01-04-16-41-50.jpeg)
 
 안녕하세요. **Flamme**의 **Gitbook**입니다.
 
@@ -14,21 +14,21 @@ description: Flamme 란? 디저트나 음식을 플랑베해서 손님 앞에 �
 
 
 
- 현재 저의 업적입니다. 
+&#x20;현재 저의 업적입니다.&#x20;
 
-  \- 2019년 5월부터 12월 대덕인재개발원 (수료)
+&#x20; \- 2019년 5월부터 12월 대덕인재개발원 (수료)
 
- \- 2020년 1월 2일 \~ 현재(2021년 10월 18일) 그룹웨어 회사 모바일 서버 개발
+&#x20;\- 2020년 1월 2일 \~ 현재(2021년 10월 22일) 그룹웨어 회사 모바일 서버 개발
 
 
 
- 운영 중 페이지 
+&#x20;운영 중 페이지&#x20;
 
-1 . GITHUB : 
+1 . GITHUB :&#x20;
 
 {% embed url="https://github.com/Flamme1004K" %}
 
-2 . GITBOOK : 
+2 . GITBOOK :&#x20;
 
 {% embed url="https://flamme1004.gitbook.io/flamme-dev/" %}
 
