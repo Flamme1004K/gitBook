@@ -7,14 +7,14 @@ description: 이 글은 손에 잡히는 10분 SQL을 공부하며 쓴 정리본
 ### 목차
 
 * 테이블 생성과 조작
-* 데이터형과 제약조건 
+* 데이터형과 제약조건&#x20;
 * 데이터 삽입하기
 * 데이터 업데이트와 삭제
 * 뷰 사용하기
-* 인덱스 
+* 인덱스&#x20;
 * 트랜잭션 처리 관리하기
 * 저장프로시저
-* 커서 
+* 커서&#x20;
 * 트리거
 * 데이터베이스 보안
 
@@ -37,7 +37,7 @@ CREATE TABLE [새로운 테이블 이름]
  );
 ```
 
-테이블 생성 규칙 1. CREATE TABLE 문 뒤에 새로운 테이블 이름을 적는다. 2. 테이블 이름과 정의를 콤마\(,\)로 구분하여 적는다. 3. 일부 DBMS에서는 테이블의 위치도 명시
+테이블 생성 규칙 1. CREATE TABLE 문 뒤에 새로운 테이블 이름을 적는다. 2. 테이블 이름과 정의를 콤마(,)로 구분하여 적는다. 3. 일부 DBMS에서는 테이블의 위치도 명시
 
 이러한 테이블 생성 규칙을 이용하여 테이블을 생성하면 된다.
 
@@ -148,9 +148,9 @@ CREATE TABLE OrderItems
 ALTER TABLE Vendors ADD CONSTRAINT PRIMARY KEY(order_num);
 ```
 
-[http://tcpschool.com/mysql/mysql\_constraint\_primaryKey](http://tcpschool.com/mysql/mysql_constraint_primaryKey)
+[http://tcpschool.com/mysql/mysql\_constraint\_primaryKey](http://tcpschool.com/mysql/mysql\_constraint\_primaryKey)
 
-기본키 **\(PRIMARY KEY\)** 는 특별한 제약 조건으로서 열에 있는 값이 고유하면서 절대 변하지 않는다는 것을 보장하기 위해 사용한다.
+기본키 **(PRIMARY KEY)** 는 특별한 제약 조건으로서 열에 있는 값이 고유하면서 절대 변하지 않는다는 것을 보장하기 위해 사용한다.
 
 즉, 테이블의 열로 테이블에 있는 행을 고유하게 구별할 수 있는 값을 가지게 하고 특정한 행을 매우 쉽게 조작할 수 있게 한다.
 
@@ -180,7 +180,7 @@ ADD CONSTRAINT
 FOREIGN KEY(cust_id) REFERENCES Customers(cust_id);
 ```
 
-외래 키 **\(FOREGIN KEY\)** 는 테이블에 있는 열이면서 그 값이 다른 테이블의 기본 키 값 중에 꼭 존재해야하는 열이다.
+외래 키 **(FOREGIN KEY)** 는 테이블에 있는 열이면서 그 값이 다른 테이블의 기본 키 값 중에 꼭 존재해야하는 열이다.
 
 외래 키는 참조 무결성을 보장하는 데 대단히 중요한 역할을 한다.
 
@@ -194,7 +194,7 @@ FOREIGN KEY(cust_id) REFERENCES Customers(cust_id);
 
 #### 고유 키 무결성 제약 조건
 
-열\(또는 열 집합\)에 있는 모든 데이터가 동일한 값을 가질 수 없음을 정의하는 제약 조건이다.
+열(또는 열 집합)에 있는 모든 데이터가 동일한 값을 가질 수 없음을 정의하는 제약 조건이다.
 
 * 테이블은 여러 고유 키 무결성 제약 조건을 가질 수 있지만, 기본 키는 한 테이블에 하나만 정의 되어야 한다.
 * 열은 NULL을 허용
@@ -338,10 +338,10 @@ FROM Vendors;
 
 **트랜잭션 키워드**
 
-* 트랜잭션\(Transaction\) - 일괄 처리할 SQL 명령어들을 묶은 블록\(block\)
-* 롤백\(Rollback\) - 변경된 작업 내용을 모두 취소하는 전략
-* 커밋\(Commit\) - 변경된 작업 내용을 데이터 베이스에 저장
-* 저장점\(Savepoint\) - 부분적으로 롤백하기 위한 임시 저장
+* 트랜잭션(Transaction) - 일괄 처리할 SQL 명령어들을 묶은 블록(block)
+* 롤백(Rollback) - 변경된 작업 내용을 모두 취소하는 전략
+* 커밋(Commit) - 변경된 작업 내용을 데이터 베이스에 저장
+* 저장점(Savepoint) - 부분적으로 롤백하기 위한 임시 저장
 
 #### 트랜잭션 통제하기
 
@@ -423,7 +423,7 @@ SQL문은 한개 이상의 테이블에 대해 단일한 구문을 상요한다�
 * 방향과 위치를 제어할 수 있는 기능
 * 특정한 열만 수정할 수 있게 표시하고, 그 외의 열은 수정하지 못하기하는 기능
 * 커서를 특정한 요청이나 모든 요청에 접근할 수 있게 하는 범위 지정 기능
-* DBMS에서 가져온 데이터를 복사하여, 커서가 연\(open\) 후 데이터를 사용하는 사이에 데이턱타 변경되지 않게 하는 기능
+* DBMS에서 가져온 데이터를 복사하여, 커서가 연(open) 후 데이터를 사용하는 사이에 데이턱타 변경되지 않게 하는 기능
 
 ### 트리거
 
@@ -455,10 +455,8 @@ SQL문은 한개 이상의 테이블에 대해 단일한 구문을 상요한다�
 
 
 
-## [https://nesoy.github.io/articles/2018-02/Database-Partitioning](https://nesoy.github.io/articles/2018-02/Database-Partitioning
-)
+[https://nesoy.github.io/articles/2018-02/Database-Partitioning](https://nesoy.github.io/articles/2018-02/Database-Partitioning)
+-----------------------------------------------------------------
 
 ## [https://cheese10yun.github.io/mysql-explian/](https://cheese10yun.github.io/mysql-explian/)
-
-
 

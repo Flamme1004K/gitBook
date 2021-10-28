@@ -16,17 +16,17 @@
 
 일단 valid 메세지부터 보겠다.
 
-valid 메세지를 출력하려면 
+valid 메세지를 출력하려면&#x20;
 
 메세지를 읽어올 때 사용할 MessageSource를 스프링 설정에 등록한다.
 
-**잠깐, 여기서 프로퍼티 설정, 메시지 설정에 대해서부터 알고 넘어가려고 한다.** 
+**잠깐, 여기서 프로퍼티 설정, 메시지 설정에 대해서부터 알고 넘어가려고 한다. **
 
 이 책은 같이 설명해주면 좋을 것을... 프로퍼티설정 및 메시지 설정을 앞으로 빼놔서 책을 다시 앞으로 넘겨야됐다.
 
 그리고 나는 지금 프로퍼티에 대한 설명이 부족하여 여기서 짧게 정리하자.
 
-**어플리케이션을 개발하다보면 동일한 코드를 사용하면서 일부 정보만 변경하고 싶은 경우가 흔히 발생한다.** 
+**어플리케이션을 개발하다보면 동일한 코드를 사용하면서 일부 정보만 변경하고 싶은 경우가 흔히 발생한다. **
 
 **이렇게 일부 정보만 변경하게 만드는 방법 중에 하나가 Environment이다.**
 
@@ -40,7 +40,7 @@ Enviroment는 프로퍼티 통합관리, 프로필을 이용해서 선택적으�
 
 그러면 프로퍼티는 어떻게 설정하는가?
 
-```text
+```
 <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
 		<property name="basenames">
 			<list>
@@ -55,19 +55,19 @@ Enviroment는 프로퍼티 통합관리, 프로필을 이용해서 선택적으�
 	</bean>
 ```
 
--egovframework
+\-egovframework
 
-```text
+```
 <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource" 
 		p:basenames="kr.or.flamme.msg.message"
 	/>
 ```
 
--MyProject
+\-MyProject
 
 properties 파일에
 
-```text
+```
 NotBlank={0}누락
 Length={0} 길이({1}~{2})확인
 Email=이메일주소확인
@@ -76,7 +76,7 @@ Min={0}대한 최소값 {1}
 Pattern={0}형식{1} 확인
 ```
 
- 써주고 &lt;form:errors path="Notblank"&gt; 써주면 된다.
+&#x20;써주고 \<form:errors path="Notblank"> 써주면 된다.
 
 이제 익셉션 처리이다.
 
@@ -92,7 +92,7 @@ ControllerAdvice는 ExceptionHandler를 공통적으로 사용하기 위해서 �
 
 코드는 이렇다.
 
-```text
+```
 @ControllerAdvice("kr.or.flamme")
 public class CommonExceptionHandler{
 	@ExceptionHandeler(RuntimeException.class)
@@ -108,7 +108,7 @@ public class CommonExceptionHandler{
 
 ResponseStatus는 익셉션 클래스에 직접 에러 응답코드를 설정하고 싶을 때 사용한다.
 
-```text
+```
 throw new NoFileInfoException();
 
 @ResponseStatus(HttpStatus.NOT_FOUND)
@@ -119,5 +119,4 @@ public class NoFileInfoException extends Exception{
 
 이렇게 HttpStatus.NOT\_FOUND를 걸어준다.
 
-이 놈은 꼭 컨트롤러 영역에서 발생시키는 익셉션 코드에만 사용해야 한다. \(UI영역에 의존하는 결과를 만들기 때문이다.\)
-
+이 놈은 꼭 컨트롤러 영역에서 발생시키는 익셉션 코드에만 사용해야 한다. (UI영역에 의존하는 결과를 만들기 때문이다.)

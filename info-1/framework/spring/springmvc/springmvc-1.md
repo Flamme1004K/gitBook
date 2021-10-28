@@ -26,11 +26,11 @@ framework란? 어플레이케이션 개발에 바탕이 되는 클래스와 인�
 
 **2. web.xml에 캐릭터 인코딩 처리 위한 필터 설정**
 
-**3. 스프링 MVC 설정 \( HandlerMapping, HandlerAdapter설정, ViewResolver 설정\)**
+**3. 스프링 MVC 설정 ( HandlerMapping, HandlerAdapter설정, ViewResolver 설정)**
 
 일단 pom.xml은 뒤로 미루고, web.xml을 봐보자.
 
-```text
+```
 <servlet>
 	<servlet-name>dispatcher</servlet-name>
     <servlet-class>
@@ -72,9 +72,9 @@ framework란? 어플레이케이션 개발에 바탕이 되는 클래스와 인�
 <!--요청 파라미터를 UTF-8로 처리하기 위한 필터를 설정-->
 ```
 
-- 현재 읽고 있는 책의 web.xml예제 
+\- 현재 읽고 있는 책의 web.xml예제&#x20;
 
-- SpringBoot에서 web.xml 안 보이는 이유는 boot안에 내부 톰캣이 있기 때문에 안 보이는 거라고 한다.\(?\)
+\- SpringBoot에서 web.xml 안 보이는 이유는 boot안에 내부 톰캣이 있기 때문에 안 보이는 거라고 한다.(?)
 
 Web.xml의 첫번째 주석을 보면 DispatcherServlet 등록이라고 써져있을 것이다.
 
@@ -112,7 +112,7 @@ View -  컨트롤러의 처리 결과 화면을 생성한다.
 
 DispatcherServlet은 spring mvc의 대표적인 서블렛 클래스이다.
 
-```text
+```
     <servlet>
           <servlet-name>dispatcherServlet</servlet-name>
           <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -126,13 +126,13 @@ DispatcherServlet은 spring mvc의 대표적인 서블렛 클래스이다.
     </servlet>
 ```
 
-- xml을 이용하여 dispatcherServlet 등록
+\- xml을 이용하여 dispatcherServlet 등록
 
-기본 서블렛 설정 시 servlet-name, servlet-class만 써주면 된다. 
+기본 서블렛 설정 시 servlet-name, servlet-class만 써주면 된다.&#x20;
 
 하지만 설정 파일이 많아진다면 init-param 속에 contextConfigLocation을 넣고 param-value에 결로를 설정해주면 된다.
 
-```text
+```
     <servlet>
           <servlet-name>dispatcherServlet</servlet-name>
           <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -150,9 +150,9 @@ DispatcherServlet은 spring mvc의 대표적인 서블렛 클래스이다.
     </servlet>
 ```
 
-- javaConfiguration을 이용하여 dispatcherServlet 등록
+\- javaConfiguration을 이용하여 dispatcherServlet 등록
 
-```text
+```
 <filter>
 	<filter-name>encodingFilter</filter-name>
 	<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -175,7 +175,7 @@ DispatcherServlet은 spring mvc의 대표적인 서블렛 클래스이다.
 
 ```
 
-그 후에 dispatcher parameter를 받아주기 위하여 밑에 encoding 설정을 해준다. 
+그 후에 dispatcher parameter를 받아주기 위하여 밑에 encoding 설정을 해준다.&#x20;
 
 우리나라인 경우에는 대부분 UTF-8을 쓰기 때문이다.
 
@@ -187,7 +187,7 @@ dispatcherServlet을 /\*을 안 해주면 html, css가 안 먹을 수 있으므�
 
 mvc-config을 사용해보자
 
-```text
+```
 <?xml version="1.0" encoding="UTF-8"?>
 
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -212,21 +212,21 @@ mvc-config을 사용해보자
 </beans>
 ```
 
--xml방식
+\-xml방식
 
 기존 Spring을 만들었을 때 기본적으로 생기는 config 파일이다.
 
-&lt;mvc:annotation-driven /&gt; 태그는 RequestMappingHandlerMapping, RequestMappingHandlerAdapter를 등록해준다.
+\<mvc:annotation-driven /> 태그는 RequestMappingHandlerMapping, RequestMappingHandlerAdapter를 등록해준다.
 
-mvc:annotation 
+mvc:annotation&#x20;
 
- - @Controller 애노테이션이 적용된 클래스를 컨트롤러로 쓰게 해준다.
+&#x20;\- @Controller 애노테이션이 적용된 클래스를 컨트롤러로 쓰게 해준다.
 
- - JSON이나 XML 등 요청/ 응답 처리에 필요한 ConversionService등을 빈으로 등록해준다.
+&#x20;\- JSON이나 XML 등 요청/ 응답 처리에 필요한 ConversionService등을 빈으로 등록해준다.
 
 ViewResolver는 컨트롤러의 처리 결과를 jsp의 경로를 생성할 때 사용된다.
 
-```text
+```
 @Configurattion
 @EnableWebMvc
 public class MvcQuickStartConfig {
@@ -240,7 +240,7 @@ public class MvcQuickStartConfig {
 }
 ```
 
--javaConfig방식
+\-javaConfig방식
 
 요번 시간은 이걸로 끝이다. 다음 시간에 신경 쓰이던 부분인
 
@@ -250,5 +250,4 @@ public class MvcQuickStartConfig {
 
 이 부분을 설명하고 mvc 기본 설정에 대한 설명을 이어서 설명하겠습니다.
 
- 
-
+&#x20;

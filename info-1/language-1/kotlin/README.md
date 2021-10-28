@@ -8,11 +8,11 @@
 4. **화면을 만든 후 로그인 화면을 만들어보자.**
 5. **Kotlin In Action을 공부해보자. 코틀린 인 액션을 공부할 때는 스터디를 만들어서 공부해보자.**
 
-\*\*\*\*
+****
 
- **현재 : 코틀린 인 액션 3장 진행**  
+** 현재 : 코틀린 인 액션 3장 진행  **
 
- **오늘 코틀린에 설랫다!**
+** 오늘 코틀린에 설랫다!**
 
 Kotlin also with run let 차
 
@@ -20,7 +20,7 @@ kotlin any 알아보
 
 kotlin interview 알아보
 
- kotlin when을 좀 더 잘써보기
+&#x20;kotlin when을 좀 더 잘써보기
 
 Refernece this의 위험성을 알아보자
 
@@ -29,6 +29,4 @@ Refernece this의 위험성을 알아보자
 
 
 {% embed url="https://www.journaldev.com/20567/kotlin-interview-questions" %}
-
-
 

@@ -2,20 +2,20 @@
 
 ## 데이터베이스 식별자 선택 전략
 
-데이터베이스 기본 키는 3가지 조건을 모두 만족해야 한다. 
+데이터베이스 기본 키는 3가지 조건을 모두 만족해야 한다.&#x20;
 
-1. null값은 허용하지 않는다. 
+1\. null값은 허용하지 않는다.&#x20;
 
-2. 유일해야한다. 
+2\. 유일해야한다.&#x20;
 
-3. 변해선 안 된다.
+3\. 변해선 안 된다.
 
 테이블의 기본 키를 선택하는 전략은 2가지가 있다.
 
-* 자연키 \(natural key\)
+* 자연키 (natural key)
   * 비즈니스에 의미가 있는 키
-    * 예\) 주민등록번호, 이메일, 전화번호
-* 대리 키\(surrogate key\)
+    * 예) 주민등록번호, 이메일, 전화번호
+* 대리 키(surrogate key)
   * 비즈니스와 관련 없는 임의로 만들어진 키, 대체 키로도 불린다.
   * 예 : 오라클 시퀀스, auto\_increment, 키 생성 테이블 사용
 
@@ -29,13 +29,12 @@
 
 그래도 자연키를 써야되겟다면 해당 자연키가 작고 변화되지 않는 것을 골라야 할 것이다.
 
-### GUID\(UUID\) VS 시퀀스 , AutoIncrement
+### GUID(UUID) VS 시퀀스 , AutoIncrement
 
 * [https://dba.stackexchange.com/questions/264/guid-vs-int-which-is-better-as-a-primary-key](https://dba.stackexchange.com/questions/264/guid-vs-int-which-is-better-as-a-primary-key)
 * [https://nesoy.github.io/articles/2020-04/Guid](https://nesoy.github.io/articles/2020-04/Guid)
 * [https://medium.com/@FranckPachot/uuid-aka-guid-vs-oracle-sequence-number-ab11aa7dbfe7](https://medium.com/@FranckPachot/uuid-aka-guid-vs-oracle-sequence-number-ab11aa7dbfe7)
 
-위에서 자연키 vs 대리키를 찾다가 대부분의 사람들은 대리키를 선택했다. 하지만 대리키 선택에서도 GUID\(UUID\)를 쓸 것인가? 시퀀스, AutoIncrement를 쓸 것인가에 대한 논쟁이 있었다.
+위에서 자연키 vs 대리키를 찾다가 대부분의 사람들은 대리키를 선택했다. 하지만 대리키 선택에서도 GUID(UUID)를 쓸 것인가? 시퀀스, AutoIncrement를 쓸 것인가에 대한 논쟁이 있었다.
 
-위 3가지의 글을 읽고 느낀점은 GUID\(UUID\)가 아무리 유일성에 대한 장점이 있겠지만 나중에 많은 데이터값으로 인한 성능 이슈가 일어나기 때문에 AutoIncrement나 시퀀스 전략을 사용하는 것이 좋다고 생각한다.
-
+위 3가지의 글을 읽고 느낀점은 GUID(UUID)가 아무리 유일성에 대한 장점이 있겠지만 나중에 많은 데이터값으로 인한 성능 이슈가 일어나기 때문에 AutoIncrement나 시퀀스 전략을 사용하는 것이 좋다고 생각한다.

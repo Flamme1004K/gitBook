@@ -4,7 +4,7 @@ description: 이것은 김영한님의 JPA책을 정리한 글입니다.
 
 # Chap14
 
-## 
+##
 
 ## JPA 14장 - 컬렉션과 부가 기능
 
@@ -19,13 +19,15 @@ JPA는 자바에서 기본으로 제공하는 Collection, List, Set, Map 컬렉�
   * 하이버네이트는 중복을 허용하고 순서를 보장하지 않는다고 가정한다.
 * Set : 중복을 허용하지 않는 컬렉션. 순서를 보장하지 않음.
 * List : 순서가 있는 컬렉션. 순서를 보장하고 중복을 허용한다.
-* Map : Key, Value 구조로 되어 있는 특수한 컬렉션
+*   Map : Key, Value 구조로 되어 있는 특수한 컬렉션
 
-  **JPA와 컬렉션**
+    **JPA와 컬렉션**
 
-  하이버네이트는 엔티티를 영속 상태로 만들 때 컬렉션 필드를 하이버네이트에서 준비한 컬렉션으로 감싸 사용한다.
+    하이버네이트는 엔티티를 영속 상태로 만들 때 컬렉션 필드를 하이버네이트에서 준비한 컬렉션으로 감싸 사용한다.
 
-```text
+
+
+```
 
 java @OneToMany @JoinColumn private Collection members = new ArrayList();
 -->
@@ -45,11 +47,11 @@ before persist = class java.util.ArrayList after persist = class org.hibernate.c
 
 결과적으로 이런 특징 때문에 컬렉션을 사용할 때 초기화해서 사용하는 것을 권장한다.
 
-```text
+```
 Collection<Member> members = new ArrayList<Member>();
 ```
 
-\*\*\*\*
+****
 
 **이제 Collection, List, Set, Map에 대한 래퍼 컬렉션에 대해서 알아보자.**
 
@@ -97,17 +99,17 @@ Q1. 왜 지연 로딩된 컬렉션을 초기화 하지 않을까?
 * 내장 컬렉션 : PersistenceSet
 * 중복 허용 : X
 * 순서 보관 : X
-* HashSet으로 초기화
+*   HashSet으로 초기화
 
-  ```java
-   @Entity
-   public class Parent {   
+    ```java
+     @Entity
+     public class Parent {   
 
-   @OneToMany
-   @JoinColumn
-   private Set<SetChild> set = new HashSet<SetChild>();
-  }
-  ```
+     @OneToMany
+     @JoinColumn
+     private Set<SetChild> set = new HashSet<SetChild>();
+    }
+    ```
 
 ```java
     Set<Comment> comments = new HashSet<Comment>();
@@ -123,38 +125,38 @@ Set은 엔티티를 추가할 때 중복된 엔티티가 있는지 비교해야 
 
 * 내장 컬렉션 : PersistentList
 * 중복 허용 : O
-* 순서 보관 : O
+*   순서 보관 : O
 
-  ```java
-   @Entity
-   public class Board {
+    ```java
+     @Entity
+     public class Board {
 
-       @Id @GeneratedValue
-       private Long id;
+         @Id @GeneratedValue
+         private Long id;
 
-       private String title;
-       private String content;
+         private String title;
+         private String content;
 
-       @OneToMany(mappedBy = "board")
-       @OrderColumn(name = "POSITION")
-       private List<Commnet> comments = new ArrayList<Comment>();
+         @OneToMany(mappedBy = "board")
+         @OrderColumn(name = "POSITION")
+         private List<Commnet> comments = new ArrayList<Comment>();
 
-       ...
-   }
+         ...
+     }
 
-   @Entity
-   public class Comment {
+     @Entity
+     public class Comment {
 
-       @Id @GeneratedValue
-       private Long id;
+         @Id @GeneratedValue
+         private Long id;
 
-       private String comment;
+         private String comment;
 
-       @ManyToOne
-       @JoinColumn(name = "BOARD_ID")
-       private Board board;
-   }
-  ```
+         @ManyToOne
+         @JoinColumn(name = "BOARD_ID")
+         private Board board;
+     }
+    ```
 
 1. Board.comments에 List 인터페이스를 사용하고 @OrderColumn을 추가했다.
 2. Board.comments는 순서가 있는 컬렉션으로 인식된다.
@@ -193,32 +195,31 @@ em.persist(comment2);
   * POSITION은 Board.comments의 위치 값이므로, 이 값을 사용해서 POSITION의 값을 UPDATE 하는 SQL이 추가로 발생한다.
 * List를 변경하면 연관된 많은 위치 값을 변경해야 한다.
   * 댓글2를 삭제하면 댓글3, 댓글 4의 POSITION 값을 각각 하나씩 줄이는 UPDATE SQL이 2번 추가로 실행된다.
-* 중간에 POSITION값이 없으면 조회한 LIST에는 null이 보관된다.
+*   중간에 POSITION값이 없으면 조회한 LIST에는 null이 보관된다.
 
-  * NullPointerException이 발생한다.
+    * NullPointerException이 발생한다.
 
-  이러한 단점을 가지고 있기 때문에 @OrderColumn을 매핑하지 말고 개발자가 직접 POSITION 값을 관리하거나 다음에 설명하는 @OrderBhy를 사용하길 권장한다.
+    이러한 단점을 가지고 있기 때문에 @OrderColumn을 매핑하지 말고 개발자가 직접 POSITION 값을 관리하거나 다음에 설명하는 @OrderBhy를 사용하길 권장한다.
 
-  **@OrderBy**
+    **@OrderBy**
 
-  @orderBy는 데이터베이스의 ORDER BY절을 사용해서 컬렉션을 정렬한다.
-
+    @orderBy는 데이터베이스의 ORDER BY절을 사용해서 컬렉션을 정렬한다.
 * 순서용 컬럼을 매핑하지 않아도 된다.
-* @OrderBy는 모든 컬렉션에 사용할 수 있다.
+*   @OrderBy는 모든 컬렉션에 사용할 수 있다.
 
-  ```java
-   @Entity
-   public class Team { 
+    ```java
+     @Entity
+     public class Team { 
 
-       @Id @GeneratedValue
-       private Long id;
-       private String name;
+         @Id @GeneratedValue
+         private Long id;
+         private String name;
 
-       @OneToMany(mappedBy = "team")
-       @OrderBy("username desc, id asc")
-       private Set<Member> members = new HashSet<Member>();
-   }
-  ```
+         @OneToMany(mappedBy = "team")
+         @OrderBy("username desc, id asc")
+         private Set<Member> members = new HashSet<Member>();
+     }
+    ```
 
 @OrderBy의 값으로 username desc, id asc를 사용해서 Member의 username 필드로 내림차순으로 정렬하고 id로 오름차순 정렬 했다.
 
@@ -269,31 +270,31 @@ em.persist(comment2);
     }
 ```
 
-* converToDatabaseColumn\(\) : 엔티티의 데이터를 데이터베이스 컬럼에 저장할 데이터로 변환한다.
+* converToDatabaseColumn() : 엔티티의 데이터를 데이터베이스 컬럼에 저장할 데이터로 변환한다.
   * ture면 Y를 false면 N을 반환하도록 한다.
-* convertToEntityAttribute\(\) : 데이터베이스에서 조회한 컬럼 데이터를 엔티티의 데이터로 변환한다.
+*   convertToEntityAttribute() : 데이터베이스에서 조회한 컬럼 데이터를 엔티티의 데이터로 변환한다.
 
-  * 문자 Y면 true를 아니면 false를 반환하도록 했다.
+    * 문자 Y면 true를 아니면 false를 반환하도록 했다.
 
-  4 . 이제부터 회원 엔티티를 저장하면 데이터베이스의 VIP 컬럼에는 Y 또는 N이 저장된다.
+    4 . 이제부터 회원 엔티티를 저장하면 데이터베이스의 VIP 컬럼에는 Y 또는 N이 저장된다.
 
-  같은 클래스 레벨에 설정할 수 있다.
+    같은 클래스 레벨에 설정할 수 있다.
 
-  ```java
-   @Entity
-   @Convert(converter = BooleanToYNConverter.class, attributeName = "vip")
-   public class Member { 
-       @Id
-       private String id;
-       private String username;
+    ```java
+     @Entity
+     @Convert(converter = BooleanToYNConverter.class, attributeName = "vip")
+     public class Member { 
+         @Id
+         private String id;
+         private String username;
 
-       private boolean vip;
-   }
-  ```
+         private boolean vip;
+     }
+    ```
 
 #### 글로벌 설정
 
-모든 Boolean 타입에 컨버터를 적용하려면 @Converter\(autoApply = true\)옵션을 적용하면 된다.
+모든 Boolean 타입에 컨버터를 적용하려면 @Converter(autoApply = true)옵션을 적용하면 된다.
 
 ```java
     @Converter(autoApply = ture)
@@ -316,22 +317,22 @@ JPA 리스터 기능을 사용하면 엔티티의 생명주기에 따른 이벤�
 
 ![](https://k.kakaocdn.net/dn/tOvl4/btqEVXcxItQ/eomcVKxWEmkxFMJytldZz1/img.png)
 
-1. PostLoad 
-   * 엔티티가 영속성 컨텍스트에 조회된 직후 또는 refresh를 호출 한 후\(2차 캐시에 저장되어 있어도 호출된다.\)
-2. PrePsersist 
-   * persist\(\) 메소드를 호출해서 엔티티를 영속성 컨텍스트에 관리하기 직전에 호출된다.
+1. PostLoad&#x20;
+   * 엔티티가 영속성 컨텍스트에 조회된 직후 또는 refresh를 호출 한 후(2차 캐시에 저장되어 있어도 호출된다.)
+2. PrePsersist&#x20;
+   * persist() 메소드를 호출해서 엔티티를 영속성 컨텍스트에 관리하기 직전에 호출된다.
      * 식별자 생성 전략을 사용한 경우 엔티티에 식별자는 아직 존재하지 않는다.
      * 새로운 인스턴스를 merge할 때도 수행된다.
-3. preUpdate 
+3. preUpdate&#x20;
    * flush나 commit 호출해서 엔티티를 데이터베이스에 수정하기 직전에 호출된다.
-4. PreRemove 
-   * remove\(\) 메소드를 호출해서 엔티티를 영속성 컨텍스트에서 삭제하기 직전에 호출된다.
-5. PostPersist 
-   * flush나 commit을 호출해서 엔티티를 데이터베이스에 저장한 직후에 호출된다.   
+4. PreRemove&#x20;
+   * remove() 메소드를 호출해서 엔티티를 영속성 컨텍스트에서 삭제하기 직전에 호출된다.
+5. PostPersist&#x20;
+   * flush나 commit을 호출해서 엔티티를 데이터베이스에 저장한 직후에 호출된다.  &#x20;
      * 식별자가 항상 존재한다.
-6. PostUpdate 
+6. PostUpdate&#x20;
    * flush나 commit을 호출해서 엔티티를 데이터베이스에 수정한 직후에 호출된다.
-7. PostRemove 
+7. PostRemove&#x20;
    * flush나 commit을 호출해서 엔티티를 데이터베이스에 삭제한 직후에 호출 된다.
 
 #### 이벤트 적용 위치
@@ -394,16 +395,16 @@ JPA 리스터 기능을 사용하면 엔티티의 생명주기에 따른 이벤�
 
 여러 리스너를 등록 했을 때 이벤트 호출 순서는 다음과 같다.
 
-1. 기본리스너 -&gt; 2. 부모 클래스 리스너 -&gt; 3. 리스너 -&gt; 4. 엔티티
+1.  기본리스너 -> 2. 부모 클래스 리스너 -> 3. 리스너 -> 4. 엔티티
 
-   **더 세밀한 설정**
+    **더 세밀한 설정**
 
-   더 세밀한 설정을 위한 어노테이션도 있다.
+    더 세밀한 설정을 위한 어노테이션도 있다.
 
-   * @ExcludeDefaultListners : 기본 리스너 무시
-   * @ExcludeSuperclassListeners : 상위 클래스 이벤트 리스너 무시
+    * @ExcludeDefaultListners : 기본 리스너 무시
+    * @ExcludeSuperclassListeners : 상위 클래스 이벤트 리스너 무시
 
-   이벤트를 잘 활용하면 대부분의 엔티티에 공통으로 적용하는 등록 일자, 수정일자 처리와 해당 엔티티를 누가 등록하고 수정했는지에 대한 기록을 리스너 하나로 처리할 수 있다.
+    이벤트를 잘 활용하면 대부분의 엔티티에 공통으로 적용하는 등록 일자, 수정일자 처리와 해당 엔티티를 누가 등록하고 수정했는지에 대한 기록을 리스너 하나로 처리할 수 있다.
 
 ### 엔티티 그래프
 
@@ -447,7 +448,7 @@ Order.member가 지연 로딩으로 설정되어 있지만, 엔티티 그래프�
 
 둘 이상 정의하려면 @NamedEntityGraphs를 사용하면 된다.
 
-#### em.find\(\)에서 엔티티 그래프 사용
+#### em.find()에서 엔티티 그래프 사용
 
 ```java
     EntityGraph graph = em.getEntityGraph("Order.withMember")
@@ -476,7 +477,7 @@ Order.member가 지연 로딩으로 설정되어 있지만, 엔티티 그래프�
 
 Order.withAll이라는 Namde 엔티티 그래프를 정의했다.
 
-이 엔티티 그래프는 Order -&gt; Member, Order -&gt; OrderItem, OrderItem -&gt; Item의 객체 그래프를 함께 조회한다.
+이 엔티티 그래프는 Order -> Member, Order -> OrderItem, OrderItem -> Item의 객체 그래프를 함께 조회한다.
 
 ```java
     Map hints = new HashMap();
@@ -489,7 +490,7 @@ Order.withAll이라는 Namde 엔티티 그래프를 정의했다.
 
 #### JPQL에서 엔티티 그래프 사용
 
-JPQL에서 엔티티 그래프를 사용하는 방법은 em.find\(\)와 동일하게 힌트만 추가함녀 된다.
+JPQL에서 엔티티 그래프를 사용하는 방법은 em.find()와 동일하게 힌트만 추가함녀 된다.
 
 ```java
     List<Order> resultList = 
@@ -501,7 +502,7 @@ JPQL에서 엔티티 그래프를 사용하는 방법은 em.find\(\)와 동일�
 
 #### 동적 엔티티 그래프
 
-엔티티 그래프를 동적으로 구성하려면 createEntityGraph\(\) 메소드를 사용하면 된다.
+엔티티 그래프를 동적으로 구성하려면 createEntityGraph() 메소드를 사용하면 된다.
 
 ```java
     public <T> EntityGraph<T> createEntityGraph(Class<T> rootType);
@@ -515,7 +516,7 @@ JPQL에서 엔티티 그래프를 사용하는 방법은 em.find\(\)와 동일�
     Order order = em.find(Order.class , orderId, hints)
 ```
 
-em.createEntityGraph\(Order.class\)를 사용해서 동적으로 엔티티 그래프를 만들었다. 그리고 graph.addAttributeNodes\("member\)를 사용해서 orer.member 속성을 엔티티 그래프에 포함했다.
+em.createEntityGraph(Order.class)를 사용해서 동적으로 엔티티 그래프를 만들었다. 그리고 graph.addAttributeNodes("member)를 사용해서 orer.member 속성을 엔티티 그래프에 포함했다.
 
 ```java
 EntityGraph<Order> graph = em.createEntityGraph(Order.class);
@@ -529,7 +530,7 @@ hints.put("javax.persistence.fetchgraph", graph);
 Order order = em.find(Order.class, orderId, hints);
 ```
 
-graph.addSubgraph\("orderItems"\) 메소드를 사용해서 서브그래프를 만들었다. 그리고 서브 그래프가 item 속성을 포함하도록 했다.
+graph.addSubgraph("orderItems") 메소드를 사용해서 서브그래프를 만들었다. 그리고 서브 그래프가 item 속성을 포함하도록 했다.
 
 #### 엔티티 그래프 정리
 
@@ -553,4 +554,3 @@ loadgraph는 엔티티 그래프에 선택한 속성뿐만 아니라 글로벌 f
 * 컨버터를 사용하면 엔티티의 데이터를 변환해서 데이터베이스에 저장할 수 있다.
 * 리스너를 사용하면 엔티티에서 발생한 이벤트를 받아서 처리할 수 있다.
 * 페치 조인은 객체지향 쿼리를 사용해야 하지만 엔티티 그래프를 사용하면 객체지향 쿼리를 사용하지 않아도 원하는 객체 그래프를 한 번에 조회할 수 있다.
-

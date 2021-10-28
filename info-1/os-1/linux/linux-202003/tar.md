@@ -2,7 +2,7 @@
 
 현재 나는 tar 압축시 어떻게 심볼릭 링크도 같이 압축할 것인지.
 
-그리고 압축을 해제했을때 심볼릭 링크의 절대경로에 파일이 만들어지는지에 대해 궁금해서 
+그리고 압축을 해제했을때 심볼릭 링크의 절대경로에 파일이 만들어지는지에 대해 궁금해서&#x20;
 
 테스트 해보려고 한다.
 
@@ -14,11 +14,11 @@ root파일 처음에다가 symbolicFile을 만들었다.
 
 ![](https://k.kakaocdn.net/dn/bTB95B/btqCwWNeWPp/xciDQZTku20JTk3Sv9NE4k/img.png)
 
-그다음에 flamme 계정에 들어가 testFile을 만들고 그 안에다가 아까전에 만들었던 symbolicFile을 
+그다음에 flamme 계정에 들어가 testFile을 만들고 그 안에다가 아까전에 만들었던 symbolicFile을&#x20;
 
 심볼릭 링크화 시켜주었다.
 
-그리고 
+그리고&#x20;
 
 ![](https://k.kakaocdn.net/dn/B8RRX/btqCoQuT8hW/YAtIsyW9vf09KKDmIpx9E0/img.png)
 
@@ -34,7 +34,7 @@ root파일 처음에다가 symbolicFile을 만들었다.
 
 현재까지 하고있음.. 조금남았다!
 
-잘보니깐 tar파일을 만들어줄때 같이 만들어준게 아니라... 
+잘보니깐 tar파일을 만들어줄때 같이 만들어준게 아니라...&#x20;
 
 추후 pl파일 설치할때 같이 만들어준것이었다.
 
@@ -42,6 +42,4 @@ root파일 처음에다가 symbolicFile을 만들었다.
 
 다음에는 펄스크립트를 이용해서 tar 알집을 풀어보자
 
-ps. 잘보니깐 tar압축을 풀때 뒤에 -c / 로 압축을 풀어주면 루트디렉토리에 풀림.  
-
-
+ps. 잘보니깐 tar압축을 풀때 뒤에 -c / 로 압축을 풀어주면 루트디렉토리에 풀림.\

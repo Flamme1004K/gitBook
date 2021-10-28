@@ -10,17 +10,17 @@ description: 이 글은 김영한님의 jpa책을 보고 공부한 흔적입니�
 
 참고로 JPA 프록시는 디자인 패턴에서 프록시 패턴으로 구현되어 있습니다.
 
- 프록시 패턴이?
+&#x20;프록시 패턴이?
 
- 어떤 일을 대리인\(프록시\)에게 위임하여 처리하는 패턴이다. 원격 객체에 접근하기 위해 사용하거나, 이미지 로딩과 같이 객체 생성 작업이 오래걸리는 경우에 사용된다.
+&#x20;어떤 일을 대리인(프록시)에게 위임하여 처리하는 패턴이다. 원격 객체에 접근하기 위해 사용하거나, 이미지 로딩과 같이 객체 생성 작업이 오래걸리는 경우에 사용된다.
 
- proxy pattern과 비슷한 패턴은 바로 wrapper pattern이다. \(추가로 adapter pattern 도 알아보자\)
+&#x20;proxy pattern과 비슷한 패턴은 바로 wrapper pattern이다. (추가로 adapter pattern 도 알아보자)
 
 {% embed url="https://juyoung-1008.tistory.com/10" %}
 
 {% embed url="https://jdm.kr/blog/235" %}
 
-{% embed url="https://kihoonkim.github.io/2017/01/27/JPA\(Java%20ORM\)/4.%20JPA-%ED%94%84%EB%A1%9D%EC%8B%9C%20%EC%99%80%20%EC%A7%80%EC%97%B0%EB%A1%9C%EB%94%A9/" %}
+{% embed url="https://kihoonkim.github.io/2017/01/27/JPA(Java%20ORM)/4.%20JPA-%ED%94%84%EB%A1%9D%EC%8B%9C%20%EC%99%80%20%EC%A7%80%EC%97%B0%EB%A1%9C%EB%94%A9/" %}
 
 ### 프록시
 
@@ -86,11 +86,11 @@ Member member = em.getReference(Member.class, "id");
 member.getName();
 ```
 
-프록시 객체는 member.getName\(\)처럼 실제 사용할 때 데이터베이스를 조회해서 실제 엔티티 객체를 생성하는게 바로 프록시 객체의 초기화라고 말합니다..
+프록시 객체는 member.getName()처럼 실제 사용할 때 데이터베이스를 조회해서 실제 엔티티 객체를 생성하는게 바로 프록시 객체의 초기화라고 말합니다..
 
 ![](../../../../../.gitbook/assets/2020-10-11-2.44.35.png)
 
-![](../../../../../.gitbook/assets/2020-10-11-2.47.34%20%281%29%20%281%29.png)
+![](<../../../../../.gitbook/assets/2020-10-11-2.47.34 (1) (1).png>)
 
 **프록시의 특징**
 
@@ -98,7 +98,7 @@ member.getName();
 2. 프록시 객체는 처음 사용할 때 한 번만 초기화된다.
 3. 프록시 객체를 초기화한다고 프록시 객체가 실제 엔티티로 바뀌는 것은 아니다. 프록시 객체가 초기화되면 프록시 객체를 통해서 실제 엔티티에 접근할 수 있다.
 4. 프록시 객체는 원본 엔티티를 상속받은 객체이므로 타입 체크 시에 주의해서 사용해야 한다.
-5. 영속성 컨텍스트에 찾는 엔티티가 이미 있으면 데이터베이스를 조회할 필요가 없으므em.getReference\(\)를 호출해도 프록시가 아닌 실제 엔티티를 반환한다.
+5. 영속성 컨텍스트에 찾는 엔티티가 이미 있으면 데이터베이스를 조회할 필요가 없으므em.getReference()를 호출해도 프록시가 아닌 실제 엔티티를 반환한다.
 6. 초기화는 영속성 컨텍스트의 도움을 받아야 가능하다.
 
 #### 프록시와 식별자
@@ -109,7 +109,7 @@ member.getName();
 Team team = em.getReference(Team.class, "team1");
 ```
 
-프록시 객체는 식별자 값을 가지고 있으므로 식별자 값을 조회하는 team.getId\(\)를 호출해도 프록시를 초기화하지 않는다.
+프록시 객체는 식별자 값을 가지고 있으므로 식별자 값을 조회하는 team.getId()를 호출해도 프록시를 초기화하지 않는다.
 
 ```java
 Member member = em.find(Member.class, "member1");
@@ -140,26 +140,26 @@ System.out.printl("isLoad = " + isLoad);
 
 : 엔티티를 조회할 때 연관된 엔티티도 함께 조회한다.
 
-* @ManyToOne\(fetch = FetchType.EAGER\)
-* 즉시 로딩을 최적화하기 위해 가능하면 조인 쿼리를 사용한다.
+* @ManyToOne(fetch = FetchType.EAGER)
+*   즉시 로딩을 최적화하기 위해 가능하면 조인 쿼리를 사용한다.
 
-  @JoinColumn\(nullable = true\) : NULL허용\(기본값\), 외부 조인 사용
+    @JoinColumn(nullable = true) : NULL허용(기본값), 외부 조인 사용
 
-  @JoinColumn\(nullable = false\) : NULL 허용하지 않음, 내부 조인 사용
+    @JoinColumn(nullable = false) : NULL 허용하지 않음, 내부 조인 사용
 
-  \*\*\*\*
+    ****
 
 **지연 로딩**
 
 : 연관된 엔티티를 실제 사용할 때 조회한다.
 
-* @ManyToOne\(fetch = FetchType.LAZY\)
+* @ManyToOne(fetch = FetchType.LAZY)
 
 #### 즉시 로딩, 지연 로딩
 
-지연 로딩\(LAZY\) : 연관된 엔티티를 프록시로 조회한다. 프록시를 실제 사용할 때 초기화 하면서 데이터베이스를 조회한다.
+지연 로딩(LAZY) : 연관된 엔티티를 프록시로 조회한다. 프록시를 실제 사용할 때 초기화 하면서 데이터베이스를 조회한다.
 
-즉시 로딩\(EAGER\) : 연관된 엔티티를 즉시 조회한다. 하이버네이트는 가능하면 SQL 조인을 사용해서 한 번에 조회한다.
+즉시 로딩(EAGER) : 연관된 엔티티를 즉시 조회한다. 하이버네이트는 가능하면 SQL 조인을 사용해서 한 번에 조회한다.
 
 #### 프록시와 컬렉션 래퍼
 
@@ -167,25 +167,27 @@ System.out.printl("isLoad = " + isLoad);
 
 fetch 속성의 기본 설정값은 다음과 같다.
 
-* @ManyToOne, @OneToOne : 즉시 로딩\(FetchType.EAGER\)
-* @OneToMany, @ManyToMany : 지연 로딩\(FetcheType.LAZY\)
+* @ManyToOne, @OneToOne : 즉시 로딩(FetchType.EAGER)
+*   @OneToMany, @ManyToMany : 지연 로딩(FetcheType.LAZY)
 
- **즉시 로딩과 지연 로딩을 사용하여 구현할 때는 모든 연관관계에 지연 로딩을 사용하는 것이고, 개발에서 어느정도 완성이 되었을 때 필요 한 곳에만 즉시 로딩을 사용하도록 최적화하는 것이다.**
+
+
+&#x20;**즉시 로딩과 지연 로딩을 사용하여 구현할 때는 모든 연관관계에 지연 로딩을 사용하는 것이고, 개발에서 어느정도 완성이 되었을 때 필요 한 곳에만 즉시 로딩을 사용하도록 최적화하는 것이다.**
 
 **FetchType.EAGER 사용 시 주의점**
 
 * 컬렉션을 하나 이상 즉시 로딩하는 것은 권장하지 않는다.
 * 컬렉션 즉시 로딩은 항상 외부 조인을 사용한다.
 * @ManyToOne, @OneToOne
-  * \(optional = false\) : 내부 조인
-  * \(optional = true\) : 외부 조인
+  * (optional = false) : 내부 조인
+  * (optional = true) : 외부 조인
 * @OneToMany, @ManyToMany
-  * \(optional = false\) : 외부 조인
-  * \(optional = true\) : 외부 조인
+  * (optional = false) : 외부 조인
+  * (optional = true) : 외부 조인
 
- Optional ??  바로 널어블을 허용할 것인가 말 것인가이다.?
+&#x20;Optional ??  바로 널어블을 허용할 것인가 말 것인가이다.?
 
-![DB sql](../../../../../.gitbook/assets/image%20%289%29.png)
+![DB sql](<../../../../../.gitbook/assets/image (9).png>)
 
 ### 영속성 전이: CASCADE
 
@@ -240,14 +242,14 @@ CascadType.ALL + orphanRemoval = true를 동시에 사용하면 어떻게 될까
 
 두 옵션을 모두 활성화하면 부모 엔티티를 통해서 자식의 생명주기를 관리할 수 있다.
 
-자식을 저장하려면 부모에 등록만 하면 된다.\(CASCADE\)
+자식을 저장하려면 부모에 등록만 하면 된다.(CASCADE)
 
 ```java
  Parent parent = em.find(Parent.class, parentId);
  parent.addChild(child1);
 ```
 
-자식을 삭제하려면 부모에서 제거하면 된다.\(orphanRemoval\),
+자식을 삭제하려면 부모에서 제거하면 된다.(orphanRemoval),
 
 ```java
  Parent parent = em.find(Parent.class, parentId);
@@ -263,11 +265,9 @@ CascadType.ALL + orphanRemoval = true를 동시에 사용하면 어떻게 될까
 
 
 
-ISSUE\)
+ISSUE)
 
 영속성 컨텍스트에서 OneToOne 레이지 로딩을 할때는 연관관계의 주인이 아닐때는 LAZY로딩이 안된다.
 
 [https://medium.com/@yongkyu.jang/jpa-%EB%8F%84%EC%9E%85-onetoone-%EA%B4%80%EA%B3%84%EC%97%90%EC%84%9C%EC%9D%98-lazyloading-%EC%9D%B4%EC%8A%88-1-6d19edf5f4d3](https://medium.com/@yongkyu.jang/jpa-%EB%8F%84%EC%9E%85-onetoone-%EA%B4%80%EA%B3%84%EC%97%90%EC%84%9C%EC%9D%98-lazyloading-%EC%9D%B4%EC%8A%88-1-6d19edf5f4d3)
-
-
 
