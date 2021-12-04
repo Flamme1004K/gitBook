@@ -8,7 +8,7 @@ description: '2021-01-22'
 
 ## JVM이란 ?&#x20;
 
-** **JRE(Java Runtime Environment)에서 실행되어 컴파일 된 Java ByteCode를 실행시켜주는 가상머신
+&#x20;**** JRE(Java Runtime Environment)에서 실행되어 컴파일 된 Java ByteCode를 실행시켜주는 가상머신
 
 **JRE 이란?**
 
@@ -45,7 +45,7 @@ description: '2021-01-22'
 
     발생 시 Heap Area에 있는 객체가 Stack Area에서 참조 할 수 없는 경우에는 해당 객체를 제거.
 
-&#x20;**  Heap Area란 ? **
+&#x20;**Heap Area란 ?**&#x20;
 
 &#x20;     JVM에서 런타임 시 동적 데이터를 저장하기 위한 영역이다. Instance Variable을 저장, Stack Area의 variable, diffrent Object field에 참조한다.
 

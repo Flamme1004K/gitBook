@@ -42,7 +42,7 @@ JPA의 내부 동작 방식을 이해하지 못하면 문제가 발생했을 때
 
 \--> @Transactional 어노테이션이 있으면 호출한 메소드를 실행하기 직전에 스프링의 트랜잭션 AOP가 먼저 동작한다.
 
-** 단 Jpa가 제공하는 RepositoryMethod들은 모두 @Transactional 처리가 되어있다.**
+&#x20;**단 Jpa가 제공하는 RepositoryMethod들은 모두 @Transactional 처리가 되어있다.**
 
 근데 왜?? 전에 LazyLoading이 일어났지?
 
