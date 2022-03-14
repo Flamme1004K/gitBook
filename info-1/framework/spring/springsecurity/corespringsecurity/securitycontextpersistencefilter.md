@@ -1,6 +1,6 @@
 # SecurityContextPersistenceFilter
 
-![](<../../../../../.gitbook/assets/2020-10-25-12.30.13 (1) (1).png>)
+![](<../../../../../.gitbook/assets/2020-10-25-12.30.13 (1).png>)
 
 SecurityContextHolder에 저장된 SecurityContext는 그 14개의 필터에서 계속 불려져 쓰인다.
 
